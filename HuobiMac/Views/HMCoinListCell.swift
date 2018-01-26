@@ -34,13 +34,13 @@ class HMCoinListCell: NSTableCellView {
         }
         rateLabel.stringValue = String(format: "%.2f %%", data.tick.rate)
         
-        if data.symbol.hasSuffix("usdt"){
+        // 根据不同的币种选择不同的精度
+        if data.symbol.last == "usdt" {
             priceLabel.stringValue = String(format: "%.2f", data.tick.close)
-            codeLabel.stringValue = data.symbol.replacingOccurrences(of: "usdt", with: "").uppercased()
-        } else if data.symbol.hasSuffix("btc") {
+        } else if data.symbol.last == "btc" {
             priceLabel.stringValue = String(format: "%.6f", data.tick.close)
-            codeLabel.stringValue = data.symbol.replacingOccurrences(of: "btc", with: "").uppercased()
         }
+        codeLabel.stringValue = data.symbol.first.uppercased()
     }
     
     class func view(_ tableView: NSTableView, owner: Any?, subject: Any?) -> NSView {

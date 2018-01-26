@@ -36,6 +36,11 @@ enum Peroid: String {
     case year = "1year"
 }
 
+struct SymbolTarget {
+    let symbol: String
+    let first: String
+    let last: String
+}
 
 /// K线
 struct KLine: Codable {
@@ -43,9 +48,17 @@ struct KLine: Codable {
     let ts: Int64
     let tick: Tick
     
-    var symbol: String {
+    var symbol: SymbolTarget {
         let components = ch.split(separator: Character("."))
-        return String(components[1])
+        let text = String(components[1])
+        let targets = ["usdt", "btc", "eth"]
+        for t in targets {
+            if text.hasSuffix(t) {
+                let first = text.replacingOccurrences(of: t, with: "")
+                return SymbolTarget(symbol: text, first: first, last: t)
+            }
+        }
+        return SymbolTarget(symbol: "btcusdt", first: "btc", last: "usdt")
     }
 }
 

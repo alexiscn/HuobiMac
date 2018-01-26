@@ -1,2 +1,2 @@
 # HuobiMac
-Huobi App for Mac
+just a Mac Status Bar App for Huobi
