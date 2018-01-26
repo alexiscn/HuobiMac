@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		432CA6CA44E6E9289BF5509F /* Pods_HuobiMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725A389839EF57D4DB4833FF /* Pods_HuobiMac.framework */; };
+		A339887B2011C59800E8282C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339887A2011C59800E8282C /* AppDelegate.swift */; };
+		A339887F2011C59800E8282C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A339887E2011C59800E8282C /* Assets.xcassets */; };
+		A339888B2011C70600E8282C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339888A2011C70600E8282C /* Models.swift */; };
+		A339888D2011C71F00E8282C /* HuobiSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339888C2011C71F00E8282C /* HuobiSocket.swift */; };
+		A33988932011CB3A00E8282C /* HMListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33988912011CB3A00E8282C /* HMListViewController.swift */; };
+		A33988942011CB3A00E8282C /* HMListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33988922011CB3A00E8282C /* HMListViewController.xib */; };
+		A33988972011CB9300E8282C /* HMCoinListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33988962011CB9300E8282C /* HMCoinListCell.swift */; };
+		A3920F73201AD8B2005C8012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3920F72201AD8B1005C8012 /* Main.storyboard */; };
+		A3920F76201ADAC2005C8012 /* PopoverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3920F75201ADAC2005C8012 /* PopoverAction.swift */; };
+		A3920F7B201B0C7A005C8012 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3920F79201B0C7A005C8012 /* MainViewController.swift */; };
+		A3920F7C201B0C7A005C8012 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3920F7A201B0C7A005C8012 /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		603DE9D07F440F6278D9936E /* Pods-HuobiMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuobiMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuobiMac/Pods-HuobiMac.debug.xcconfig"; sourceTree = "<group>"; };
+		632B958C4E7B352FDC8204E4 /* Pods-HuobiMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuobiMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuobiMac/Pods-HuobiMac.release.xcconfig"; sourceTree = "<group>"; };
+		725A389839EF57D4DB4833FF /* Pods_HuobiMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuobiMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33988772011C59800E8282C /* HuobiMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuobiMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A339887A2011C59800E8282C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A339887E2011C59800E8282C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A33988832011C59800E8282C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A33988842011C59800E8282C /* HuobiMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HuobiMac.entitlements; sourceTree = "<group>"; };
+		A339888A2011C70600E8282C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A339888C2011C71F00E8282C /* HuobiSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuobiSocket.swift; sourceTree = "<group>"; };
+		A33988912011CB3A00E8282C /* HMListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMListViewController.swift; sourceTree = "<group>"; };
+		A33988922011CB3A00E8282C /* HMListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMListViewController.xib; sourceTree = "<group>"; };
+		A33988962011CB9300E8282C /* HMCoinListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMCoinListCell.swift; sourceTree = "<group>"; };
+		A3920F72201AD8B1005C8012 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A3920F75201ADAC2005C8012 /* PopoverAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverAction.swift; sourceTree = "<group>"; };
+		A3920F79201B0C7A005C8012 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A3920F7A201B0C7A005C8012 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A33988742011C59800E8282C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432CA6CA44E6E9289BF5509F /* Pods_HuobiMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4717638188DC46FC28845DA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				603DE9D07F440F6278D9936E /* Pods-HuobiMac.debug.xcconfig */,
+				632B958C4E7B352FDC8204E4 /* Pods-HuobiMac.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A339886E2011C59800E8282C = {
+			isa = PBXGroup;
+			children = (
+				A33988792011C59800E8282C /* HuobiMac */,
+				A33988782011C59800E8282C /* Products */,
+				4717638188DC46FC28845DA7 /* Pods */,
+				E86C54A3A7B0FCA0F381C7F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A33988782011C59800E8282C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A33988772011C59800E8282C /* HuobiMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A33988792011C59800E8282C /* HuobiMac */ = {
+			isa = PBXGroup;
+			children = (
+				A3920F74201ADAB0005C8012 /* Actions */,
+				A3920F6D201AD65F005C8012 /* DataSource */,
+				A3920F6E201AD667005C8012 /* Models */,
+				A33988952011CB4900E8282C /* Views */,
+				A33988902011CB1400E8282C /* Controllers */,
+				A3920F6F201AD67A005C8012 /* Supports */,
+				A339887A2011C59800E8282C /* AppDelegate.swift */,
+			);
+			path = HuobiMac;
+			sourceTree = "<group>";
+		};
+		A33988902011CB1400E8282C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3920F79201B0C7A005C8012 /* MainViewController.swift */,
+				A3920F7A201B0C7A005C8012 /* MainViewController.xib */,
+				A33988912011CB3A00E8282C /* HMListViewController.swift */,
+				A33988922011CB3A00E8282C /* HMListViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A33988952011CB4900E8282C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A33988962011CB9300E8282C /* HMCoinListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3920F6D201AD65F005C8012 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A339888C2011C71F00E8282C /* HuobiSocket.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A3920F6E201AD667005C8012 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A339888A2011C70600E8282C /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3920F6F201AD67A005C8012 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				A3920F72201AD8B1005C8012 /* Main.storyboard */,
+				A339887E2011C59800E8282C /* Assets.xcassets */,
+				A33988832011C59800E8282C /* Info.plist */,
+				A33988842011C59800E8282C /* HuobiMac.entitlements */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		A3920F74201ADAB0005C8012 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				A3920F75201ADAC2005C8012 /* PopoverAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		E86C54A3A7B0FCA0F381C7F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				725A389839EF57D4DB4833FF /* Pods_HuobiMac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A33988762011C59800E8282C /* HuobiMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A33988872011C59800E8282C /* Build configuration list for PBXNativeTarget "HuobiMac" */;
+			buildPhases = (
+				D970C404DA7C515C3D649622 /* [CP] Check Pods Manifest.lock */,
+				A33988732011C59800E8282C /* Sources */,
+				A33988742011C59800E8282C /* Frameworks */,
+				A33988752011C59800E8282C /* Resources */,
+				90AA23147A71585871421ADA /* [CP] Embed Pods Frameworks */,
+				178AE7EF8DAA03321068C221 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HuobiMac;
+			productName = HuobiMac;
+			productReference = A33988772011C59800E8282C /* HuobiMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A339886F2011C59800E8282C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = shuifeng;
+				TargetAttributes = {
+					A33988762011C59800E8282C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A33988722011C59800E8282C /* Build configuration list for PBXProject "HuobiMac" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A339886E2011C59800E8282C;
+			productRefGroup = A33988782011C59800E8282C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A33988762011C59800E8282C /* HuobiMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A33988752011C59800E8282C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A339887F2011C59800E8282C /* Assets.xcassets in Resources */,
+				A3920F7C201B0C7A005C8012 /* MainViewController.xib in Resources */,
+				A33988942011CB3A00E8282C /* HMListViewController.xib in Resources */,
+				A3920F73201AD8B2005C8012 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		178AE7EF8DAA03321068C221 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuobiMac/Pods-HuobiMac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90AA23147A71585871421ADA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HuobiMac/Pods-HuobiMac-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gzip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuobiMac/Pods-HuobiMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D970C404DA7C515C3D649622 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuobiMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A33988732011C59800E8282C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A339888D2011C71F00E8282C /* HuobiSocket.swift in Sources */,
+				A339888B2011C70600E8282C /* Models.swift in Sources */,
+				A3920F76201ADAC2005C8012 /* PopoverAction.swift in Sources */,
+				A33988932011CB3A00E8282C /* HMListViewController.swift in Sources */,
+				A339887B2011C59800E8282C /* AppDelegate.swift in Sources */,
+				A33988972011CB9300E8282C /* HMCoinListCell.swift in Sources */,
+				A3920F7B201B0C7A005C8012 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A33988852011C59800E8282C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A33988862011C59800E8282C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		A33988882011C59800E8282C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603DE9D07F440F6278D9936E /* Pods-HuobiMac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/HuobiMac/Supports/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.shuifeng.HuobiMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A33988892011C59800E8282C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632B958C4E7B352FDC8204E4 /* Pods-HuobiMac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/HuobiMac/Supports/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.shuifeng.HuobiMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A33988722011C59800E8282C /* Build configuration list for PBXProject "HuobiMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33988852011C59800E8282C /* Debug */,
+				A33988862011C59800E8282C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A33988872011C59800E8282C /* Build configuration list for PBXNativeTarget "HuobiMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33988882011C59800E8282C /* Debug */,
+				A33988892011C59800E8282C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A339886F2011C59800E8282C /* Project object */;
+}

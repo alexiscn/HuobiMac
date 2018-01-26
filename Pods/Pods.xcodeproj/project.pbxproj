@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F03D86C862B40D641BAE7871C7D475A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		3B386838359E291951D19EA28BEE802E /* Data+Gzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA019558EC88E7545B1F87BE7A28EB03 /* Data+Gzip.swift */; };
+		55A4E9CF3193F865C1E8C6522B51A671 /* GzipSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 512DC89350F870E97DC7566A9D4E38D2 /* GzipSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F31785C0056CCCFA5FFC1B7F78C2AAC /* GzipSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 600FACA46E25E540F9ED244491BF3F70 /* GzipSwift-dummy.m */; };
+		936AA37952CFA29652E60C74A4474991 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB798B308B8E73774D47DC96D3BD9A01 /* SSLSecurity.swift */; };
+		9B7F28D5A3F70AE55DCD384D3DC19D2D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		AAD1CFEF93994ACA07EA3200E7A8C55C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		B9023B0A7B99C5780529167F81C85629 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9BB88AB533C5979FBFFCCE07A02010 /* Compression.swift */; };
+		BD6176CF560130DBA34910732891E00B /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01A5848AF87E4681EBDFA2CF29DAAF /* WebSocket.swift */; };
+		BD9FED551AB35F693B0B7F9339B8056C /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE87E23A1C5633D02DFDFB1416E91388 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C447DA70B4C56E5089699DC601FF9DC6 /* Pods-HuobiMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCAAF43F1E502D47D3CAF5DEB2C4CFA1 /* Pods-HuobiMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC1A63D25F96A3D1DD298C3ED4DCE4F7 /* Pods-HuobiMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 926C4846CEC4431495EC53D2E9FC4975 /* Pods-HuobiMac-dummy.m */; };
+		F1103DAD41011BBF96B22A4858F88881 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF06F1BFE9275D45B0DA0AC6D5F54C4 /* Starscream-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D182E01CA95A8E20B46DA426AAA694B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FBB10AB08817044F3248221DB78F872;
+			remoteInfo = Starscream;
+		};
+		D70EDCD95AE3CC7C0FFEEB2C9DC47762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 103C159A8E41B13CC7B3B8B027604542;
+			remoteInfo = GzipSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		085A25D05C510D3928346260864AB325 /* Pods-HuobiMac-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HuobiMac-resources.sh"; sourceTree = "<group>"; };
+		1C9BB88AB533C5979FBFFCCE07A02010 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression.swift; sourceTree = "<group>"; };
+		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		4486BA9B4E8982F65918B09E042A3CD6 /* GzipSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GzipSwift.modulemap; sourceTree = "<group>"; };
+		4A1A488A30C7E22AC42F9E9404CC3081 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Starscream.modulemap; sourceTree = "<group>"; };
+		4AF06F1BFE9275D45B0DA0AC6D5F54C4 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		512DC89350F870E97DC7566A9D4E38D2 /* GzipSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GzipSwift-umbrella.h"; sourceTree = "<group>"; };
+		600FACA46E25E540F9ED244491BF3F70 /* GzipSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GzipSwift-dummy.m"; sourceTree = "<group>"; };
+		62D3B4C28D93EF616EB0D4B2F1C87881 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E8E1CB2FF512BA2B3B67DCCDD090610 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78DDC10DAA65ECB7D1F479D866710B6B /* Pods-HuobiMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HuobiMac.release.xcconfig"; sourceTree = "<group>"; };
+		7ABBB9EF75A948AF4318C4A1E408D14B /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+		926C4846CEC4431495EC53D2E9FC4975 /* Pods-HuobiMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HuobiMac-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A690970D3394064A5DFB11ED4ED72ACE /* Gzip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gzip.framework; path = GzipSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC01A5848AF87E4681EBDFA2CF29DAAF /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/WebSocket.swift; sourceTree = "<group>"; };
+		AEB6C9DBCB29004612BC9BC57B761152 /* Pods-HuobiMac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HuobiMac-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB798B308B8E73774D47DC96D3BD9A01 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/SSLSecurity.swift; sourceTree = "<group>"; };
+		BBFBF4A69336C25A4FA9A7B73C4AB170 /* Pods-HuobiMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HuobiMac.debug.xcconfig"; sourceTree = "<group>"; };
+		BCFF4EC515DD0E41CA8E1EE9B322BF48 /* Pods-HuobiMac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HuobiMac-acknowledgements.plist"; sourceTree = "<group>"; };
+		C0C66283799B47226C2BFCCF5A014267 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39DC5A335DAA80DBEA4F696F572B43F /* GzipSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GzipSwift-prefix.pch"; sourceTree = "<group>"; };
+		C7CAABAF406F273681968DB5DA8B3718 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCAAF43F1E502D47D3CAF5DEB2C4CFA1 /* Pods-HuobiMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HuobiMac-umbrella.h"; sourceTree = "<group>"; };
+		DA019558EC88E7545B1F87BE7A28EB03 /* Data+Gzip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Gzip.swift"; path = "Sources/Gzip/Data+Gzip.swift"; sourceTree = "<group>"; };
+		DE87E23A1C5633D02DFDFB1416E91388 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		E2C9D33A9A2AC2819C3126716B842E5D /* Pods_HuobiMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HuobiMac.framework; path = "Pods-HuobiMac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4FF8FF6A63EDCA217A6BA56D3D7B2C7 /* GzipSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GzipSwift.xcconfig; sourceTree = "<group>"; };
+		E5E8200D4DB297F248CA6032C8E8BBFD /* Pods-HuobiMac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HuobiMac-frameworks.sh"; sourceTree = "<group>"; };
+		F3651ECDA0FB474F5AE5B1723847D3B6 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		FF0B536ADF3E44A3359B9394B6CAAFE3 /* Pods-HuobiMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HuobiMac.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33E25425EC30B869D8814BE78D1C8BDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F03D86C862B40D641BAE7871C7D475A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BA54C248AC0F618A7ED7CD859494EF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD1CFEF93994ACA07EA3200E7A8C55C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB282308498FF2B19D6E4C276A32340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7F28D5A3F70AE55DCD384D3DC19D2D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C068A18C5413F804A2959126093416 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		0F498F79BD5F8FC1A375D8BD1D70FAEE /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				1C9BB88AB533C5979FBFFCCE07A02010 /* Compression.swift */,
+				BB798B308B8E73774D47DC96D3BD9A01 /* SSLSecurity.swift */,
+				AC01A5848AF87E4681EBDFA2CF29DAAF /* WebSocket.swift */,
+				618A26AD4005A1F48224923A0850FA7E /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C068A18C5413F804A2959126093416 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		446B16B78D263481DBDBF070CB957269 /* GzipSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DA019558EC88E7545B1F87BE7A28EB03 /* Data+Gzip.swift */,
+				A7D66E2B454385834576E0821B8F8DD4 /* Support Files */,
+			);
+			name = GzipSwift;
+			path = GzipSwift;
+			sourceTree = "<group>";
+		};
+		618A26AD4005A1F48224923A0850FA7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62D3B4C28D93EF616EB0D4B2F1C87881 /* Info.plist */,
+				4A1A488A30C7E22AC42F9E9404CC3081 /* Starscream.modulemap */,
+				7ABBB9EF75A948AF4318C4A1E408D14B /* Starscream.xcconfig */,
+				4AF06F1BFE9275D45B0DA0AC6D5F54C4 /* Starscream-dummy.m */,
+				F3651ECDA0FB474F5AE5B1723847D3B6 /* Starscream-prefix.pch */,
+				DE87E23A1C5633D02DFDFB1416E91388 /* Starscream-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		73638FCA4C8DF2EBBB0DED892B976C71 /* Pods-HuobiMac */ = {
+			isa = PBXGroup;
+			children = (
+				6E8E1CB2FF512BA2B3B67DCCDD090610 /* Info.plist */,
+				FF0B536ADF3E44A3359B9394B6CAAFE3 /* Pods-HuobiMac.modulemap */,
+				AEB6C9DBCB29004612BC9BC57B761152 /* Pods-HuobiMac-acknowledgements.markdown */,
+				BCFF4EC515DD0E41CA8E1EE9B322BF48 /* Pods-HuobiMac-acknowledgements.plist */,
+				926C4846CEC4431495EC53D2E9FC4975 /* Pods-HuobiMac-dummy.m */,
+				E5E8200D4DB297F248CA6032C8E8BBFD /* Pods-HuobiMac-frameworks.sh */,
+				085A25D05C510D3928346260864AB325 /* Pods-HuobiMac-resources.sh */,
+				CCAAF43F1E502D47D3CAF5DEB2C4CFA1 /* Pods-HuobiMac-umbrella.h */,
+				BBFBF4A69336C25A4FA9A7B73C4AB170 /* Pods-HuobiMac.debug.xcconfig */,
+				78DDC10DAA65ECB7D1F479D866710B6B /* Pods-HuobiMac.release.xcconfig */,
+			);
+			name = "Pods-HuobiMac";
+			path = "Target Support Files/Pods-HuobiMac";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				8C069C24DA2D474034A4D54EA46BF117 /* Pods */,
+				9335656C25BA05C21566FC8D032B7D9D /* Products */,
+				D88916162466902C2CDD102231B6D388 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C069C24DA2D474034A4D54EA46BF117 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				446B16B78D263481DBDBF070CB957269 /* GzipSwift */,
+				0F498F79BD5F8FC1A375D8BD1D70FAEE /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9335656C25BA05C21566FC8D032B7D9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A690970D3394064A5DFB11ED4ED72ACE /* Gzip.framework */,
+				E2C9D33A9A2AC2819C3126716B842E5D /* Pods_HuobiMac.framework */,
+				C0C66283799B47226C2BFCCF5A014267 /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7D66E2B454385834576E0821B8F8DD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4486BA9B4E8982F65918B09E042A3CD6 /* GzipSwift.modulemap */,
+				E4FF8FF6A63EDCA217A6BA56D3D7B2C7 /* GzipSwift.xcconfig */,
+				600FACA46E25E540F9ED244491BF3F70 /* GzipSwift-dummy.m */,
+				C39DC5A335DAA80DBEA4F696F572B43F /* GzipSwift-prefix.pch */,
+				512DC89350F870E97DC7566A9D4E38D2 /* GzipSwift-umbrella.h */,
+				C7CAABAF406F273681968DB5DA8B3718 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GzipSwift";
+			sourceTree = "<group>";
+		};
+		D88916162466902C2CDD102231B6D388 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73638FCA4C8DF2EBBB0DED892B976C71 /* Pods-HuobiMac */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E3D34FFB676B362DD4418318EEA1187 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9FED551AB35F693B0B7F9339B8056C /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6153A2BB63CCA60A7D75657DEFD07B4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A4E9CF3193F865C1E8C6522B51A671 /* GzipSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BE04702B21D9F65E600E7D0143C962 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C447DA70B4C56E5089699DC601FF9DC6 /* Pods-HuobiMac-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		103C159A8E41B13CC7B3B8B027604542 /* GzipSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87D52CF0AC6C427810C5388613A9C26D /* Build configuration list for PBXNativeTarget "GzipSwift" */;
+			buildPhases = (
+				92C4094D57C177437703C9F2EB429BF7 /* Sources */,
+				DEB282308498FF2B19D6E4C276A32340 /* Frameworks */,
+				6153A2BB63CCA60A7D75657DEFD07B4C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GzipSwift;
+			productName = GzipSwift;
+			productReference = A690970D3394064A5DFB11ED4ED72ACE /* Gzip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5FBB10AB08817044F3248221DB78F872 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03FF14A6F4571FCB6AF0266414F2D787 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				5E7D56222856FF1ED4EE1F79F1DC5319 /* Sources */,
+				6BA54C248AC0F618A7ED7CD859494EF8 /* Frameworks */,
+				3E3D34FFB676B362DD4418318EEA1187 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = C0C66283799B47226C2BFCCF5A014267 /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE17D6997EBF9CB16FEE8EA2006ADDD3 /* Pods-HuobiMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A930D4B6593423847A533BDC03359F9F /* Build configuration list for PBXNativeTarget "Pods-HuobiMac" */;
+			buildPhases = (
+				D894AE4CF14D8F1D4D185A81AD3685DF /* Sources */,
+				33E25425EC30B869D8814BE78D1C8BDD /* Frameworks */,
+				73BE04702B21D9F65E600E7D0143C962 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66226F725A66FD94BA6C5A6C2A33112B /* PBXTargetDependency */,
+				0D150B8E6976E71E1540AB71C7EBCD29 /* PBXTargetDependency */,
+			);
+			name = "Pods-HuobiMac";
+			productName = "Pods-HuobiMac";
+			productReference = E2C9D33A9A2AC2819C3126716B842E5D /* Pods_HuobiMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9335656C25BA05C21566FC8D032B7D9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				103C159A8E41B13CC7B3B8B027604542 /* GzipSwift */,
+				CE17D6997EBF9CB16FEE8EA2006ADDD3 /* Pods-HuobiMac */,
+				5FBB10AB08817044F3248221DB78F872 /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E7D56222856FF1ED4EE1F79F1DC5319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9023B0A7B99C5780529167F81C85629 /* Compression.swift in Sources */,
+				936AA37952CFA29652E60C74A4474991 /* SSLSecurity.swift in Sources */,
+				F1103DAD41011BBF96B22A4858F88881 /* Starscream-dummy.m in Sources */,
+				BD6176CF560130DBA34910732891E00B /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C4094D57C177437703C9F2EB429BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B386838359E291951D19EA28BEE802E /* Data+Gzip.swift in Sources */,
+				5F31785C0056CCCFA5FFC1B7F78C2AAC /* GzipSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D894AE4CF14D8F1D4D185A81AD3685DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1A63D25F96A3D1DD298C3ED4DCE4F7 /* Pods-HuobiMac-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D150B8E6976E71E1540AB71C7EBCD29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 5FBB10AB08817044F3248221DB78F872 /* Starscream */;
+			targetProxy = 7D182E01CA95A8E20B46DA426AAA694B /* PBXContainerItemProxy */;
+		};
+		66226F725A66FD94BA6C5A6C2A33112B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GzipSwift;
+			target = 103C159A8E41B13CC7B3B8B027604542 /* GzipSwift */;
+			targetProxy = D70EDCD95AE3CC7C0FFEEB2C9DC47762 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		001D0C31C1AAAEC18DADF6C8E8B0F2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBFBF4A69336C25A4FA9A7B73C4AB170 /* Pods-HuobiMac.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-HuobiMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-HuobiMac/Pods-HuobiMac.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HuobiMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		012B29A5CAE5DA6DDB1DDC034FCFF4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ABBB9EF75A948AF4318C4A1E408D14B /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_NAME = Starscream;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0E874FC1E11EA46A506D32C67EC68439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1760DE4C8FAE313B8BBE8B509AE21AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		45CE6F18A2EFFFC68BB493281E2517D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4FF8FF6A63EDCA217A6BA56D3D7B2C7 /* GzipSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/GzipSwift/GzipSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GzipSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/GzipSwift/GzipSwift.modulemap";
+				PRODUCT_NAME = Gzip;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5BDE03A784842495C98838A0589EDF89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4FF8FF6A63EDCA217A6BA56D3D7B2C7 /* GzipSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/GzipSwift/GzipSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GzipSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/GzipSwift/GzipSwift.modulemap";
+				PRODUCT_NAME = Gzip;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6072CCA644FFC332C011B4CE58D36BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78DDC10DAA65ECB7D1F479D866710B6B /* Pods-HuobiMac.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-HuobiMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-HuobiMac/Pods-HuobiMac.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HuobiMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93C424FA3A1C85ED3C0C3B8AB9F16CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ABBB9EF75A948AF4318C4A1E408D14B /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_NAME = Starscream;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03FF14A6F4571FCB6AF0266414F2D787 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012B29A5CAE5DA6DDB1DDC034FCFF4EC /* Debug */,
+				93C424FA3A1C85ED3C0C3B8AB9F16CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1760DE4C8FAE313B8BBE8B509AE21AE2 /* Debug */,
+				0E874FC1E11EA46A506D32C67EC68439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87D52CF0AC6C427810C5388613A9C26D /* Build configuration list for PBXNativeTarget "GzipSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDE03A784842495C98838A0589EDF89 /* Debug */,
+				45CE6F18A2EFFFC68BB493281E2517D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A930D4B6593423847A533BDC03359F9F /* Build configuration list for PBXNativeTarget "Pods-HuobiMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001D0C31C1AAAEC18DADF6C8E8B0F2E6 /* Debug */,
+				6072CCA644FFC332C011B4CE58D36BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
