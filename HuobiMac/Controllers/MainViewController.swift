@@ -50,17 +50,22 @@ class MainViewController: NSViewController, HuobiSocketDelegate {
         }
     }
     
+    @IBAction func settingButtonTapped(_ sender: Any) {
+        PopupSettingsAction.showIn(self.view)
+    }
+    
+    
     // MARK: - HuobiSocketDelegate
     
     func huobiSocketDidConnected(_ huobiSocket: HuobiSocket) {
 //        let topic = "market.btcusdt.kline.1day"
 //        socket?.subscribe(topic)
-        watch(symbols: [Symbol.btcusdt.rawValue,
-                        Symbol.etcusdt.rawValue,
-                        Symbol.ethusdt.rawValue])
+        
+        let usdtSymbols: [String] = Symbol.usdtSymbols().map({ return $0.rawValue })
+        watch(symbols: usdtSymbols)
     }
     
-    func huobiSocket(_ huobiSocket: HuobiSocket, didDisConnectError error: NSError?) {
+    func huobiSocket(_ huobiSocket: HuobiSocket, didDisConnectError error: Error?) {
         print("error:\(error?.localizedDescription)")
     }
     

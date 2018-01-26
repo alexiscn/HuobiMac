@@ -12,7 +12,7 @@ import Gzip
 
 protocol HuobiSocketDelegate: class {
     func huobiSocketDidConnected(_ huobiSocket: HuobiSocket)
-    func huobiSocket(_ huobiSocket: HuobiSocket, didDisConnectError error: NSError?)
+    func huobiSocket(_ huobiSocket: HuobiSocket, didDisConnectError error: Error?)
     func huobiSocket(_ huobiSocket: HuobiSocket, didReceiveKLine kLine: KLine)
 }
 
@@ -96,6 +96,7 @@ extension HuobiSocket: WebSocketDelegate {
     
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         print("websocketDidDisconnect")
+        self.delegate?.huobiSocket(self, didDisConnectError: error)
     }
     
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {

@@ -46,5 +46,9 @@ extension AppDelegate {
     @objc fileprivate func togglePopover() {
         PopoverAction.toggle()
     }
+    
+    @objc func quit() {
+        NSApplication.shared.terminate(self)
+    }
 }
 

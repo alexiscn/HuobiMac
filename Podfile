@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'HuobiMac' do
 
+#    pod 'GenericNetworking'
     pod 'Starscream'
     pod 'GzipSwift'
 end

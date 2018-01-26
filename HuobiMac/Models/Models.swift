@@ -11,16 +11,26 @@ import Foundation
 enum Symbol: String {
     // usdt
     case btcusdt
+    case bchusdt
+    case xrpusdt
     case ethusdt
     case ltcusdt
+    case dashusdt
+    case eosusdt
     case etcusdt
-    case bccusdt
+    case omgusdt
+    
     // btc
     case ethbtc
     case ltcbtc
     case etcbtc
     
     // eth
+    
+    
+    static func usdtSymbols() -> [Symbol] {
+        return [.btcusdt, .bchusdt, .xrpusdt, .ethusdt, .ltcusdt, .dashusdt, .eosusdt, .etcusdt, .omgusdt]
+    }
     
 }
 
