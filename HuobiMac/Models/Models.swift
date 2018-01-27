@@ -48,8 +48,14 @@ enum Symbol: String {
     case etcbtc
     
     // eth
+    
+    
     static func usdtSymbols() -> [Symbol] {
         return [.btcusdt, .bchusdt, .xrpusdt, .ethusdt, .ltcusdt, .dashusdt, .eosusdt, .etcusdt, .omgusdt]
+    }
+    
+    static func btcSymbols() -> [Symbol] {
+        return [.ethbtc, .ltcbtc, .etcbtc]
     }
 }
 

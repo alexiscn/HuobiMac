@@ -12,7 +12,7 @@ import Gzip
 public protocol HuobiSocketDelegate: class {
     func huobiSocketDidConnected(_ huobiSocket: HuobiSocket)
     func huobiSocket(_ huobiSocket: HuobiSocket, didDisConnectError error: Error?)
-    func huobiSocket(_ huobiSocket: HuobiSocket, didReceiveKLine kLine: HBKLine)
+    func huobiSocket(_ huobiSocket: HuobiSocket, didReceiveData data: Data)
 }
 
 open class HuobiSocket: NSObject {
@@ -74,24 +74,19 @@ extension HuobiSocket: WebSocketDelegate {
     
     public func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
         //print("websocketDidReceiveData")
-        if data.isGzipped {
-            if let decompressedData = try? data.gunzipped(),
-                let content = String(data: decompressedData, encoding: .utf8) {
-                if content.hasPrefix("{\"ping") {
-                    let msg = content.replacingOccurrences(of: "ping", with: "pong")
-                    self.webSocket?.write(string: msg)
-                    return;
-                }
-                
-                do {
-                    let obj = try JSONDecoder().decode(HBKLine.self, from: decompressedData)
-                    self.delegate?.huobiSocket(self, didReceiveKLine: obj)
-                } catch(let err) {
-                    print(content)
-                    print(err.localizedDescription)
-                }
+        var receivedData = data
+        
+        if data.isGzipped,
+            let decompressedData = try? data.gunzipped(),
+            let content = String(data: decompressedData, encoding: .utf8) {
+            if content.hasPrefix("{\"ping") {
+                let msg = content.replacingOccurrences(of: "ping", with: "pong")
+                self.webSocket?.write(string: msg)
+                return;
             }
+            receivedData = decompressedData
         }
+        self.delegate?.huobiSocket(self, didReceiveData: receivedData)
     }
     
     public func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
@@ -100,6 +95,6 @@ extension HuobiSocket: WebSocketDelegate {
     }
     
     public func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
-        
+        print("websocketDidReceiveMessage:\(text)")
     }
 }
