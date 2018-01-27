@@ -1,0 +1,6 @@
+framework module HuobiSwift {
+  umbrella header "HuobiSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

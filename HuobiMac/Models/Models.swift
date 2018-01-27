@@ -58,6 +58,8 @@ struct KLine: Codable {
     let ts: Int64
     let tick: Tick
     
+    
+    
     var symbol: SymbolTarget {
         let components = ch.split(separator: Character("."))
         let text = String(components[1])

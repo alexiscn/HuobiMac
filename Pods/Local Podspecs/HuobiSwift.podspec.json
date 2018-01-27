@@ -1,0 +1,33 @@
+{
+  "name": "HuobiSwift",
+  "version": "0.0.1",
+  "license": "MIT",
+  "requires_arc": true,
+  "source": {
+    "path": "DevelopmentPods/HuobiSwift"
+  },
+  "summary": "HuobiSwift",
+  "homepage": "HuobiSwift",
+  "authors": {
+    "xushuifeng": "https://github.com/alexiscn"
+  },
+  "platforms": {
+    "ios": "9.0",
+    "osx": "10.10"
+  },
+  "source_files": [
+    "*.swift",
+    "**/*.swift"
+  ],
+  "dependencies": {
+    "Starscream": [
+
+    ],
+    "GzipSwift": [
+
+    ],
+    "GenericNetworking": [
+
+    ]
+  }
+}

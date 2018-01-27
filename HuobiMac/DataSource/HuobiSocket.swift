@@ -88,6 +88,7 @@ extension HuobiSocket: WebSocketDelegate {
                     let obj = try JSONDecoder().decode(KLine.self, from: decompressedData)
                     self.delegate?.huobiSocket(self, didReceiveKLine: obj)
                 } catch(let err) {
+                    print(content)
                     print(err.localizedDescription)
                 }
             }

@@ -1,15 +1,30 @@
 PODS:
+  - Alamofire (4.6.0)
+  - GenericNetworking (0.1.3):
+    - Alamofire
   - GzipSwift (4.0.4)
+  - HuobiSwift (0.0.1):
+    - GenericNetworking
+    - GzipSwift
+    - Starscream
   - Starscream (3.0.3)
 
 DEPENDENCIES:
   - GzipSwift
+  - HuobiSwift (from `DevelopmentPods/HuobiSwift`)
   - Starscream
 
+EXTERNAL SOURCES:
+  HuobiSwift:
+    :path: DevelopmentPods/HuobiSwift
+
 SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  GenericNetworking: 96f0b69be2bd16f735471c983411bc384c5e45df
   GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
+  HuobiSwift: 63303c691da882ccd647b550272e69cda559d30d
   Starscream: dfb1b3f39506717ee52b67fb48de0c8269504cbc
 
-PODFILE CHECKSUM: 65ac6c077cebe469011a6fb50cc668e129f37525
+PODFILE CHECKSUM: 3971752957c2be0b2eb5c6561a08897e6893adfb
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0
