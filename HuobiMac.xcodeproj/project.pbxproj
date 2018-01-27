@@ -12,7 +12,6 @@
 		A339887B2011C59800E8282C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339887A2011C59800E8282C /* AppDelegate.swift */; };
 		A339887F2011C59800E8282C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A339887E2011C59800E8282C /* Assets.xcassets */; };
 		A339888B2011C70600E8282C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339888A2011C70600E8282C /* Models.swift */; };
-		A339888D2011C71F00E8282C /* HuobiSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339888C2011C71F00E8282C /* HuobiSocket.swift */; };
 		A33988932011CB3A00E8282C /* HMListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33988912011CB3A00E8282C /* HMListViewController.swift */; };
 		A33988942011CB3A00E8282C /* HMListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33988922011CB3A00E8282C /* HMListViewController.xib */; };
 		A33988972011CB9300E8282C /* HMCoinListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33988962011CB9300E8282C /* HMCoinListCell.swift */; };
@@ -33,7 +32,6 @@
 		A33988832011C59800E8282C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A33988842011C59800E8282C /* HuobiMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HuobiMac.entitlements; sourceTree = "<group>"; };
 		A339888A2011C70600E8282C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		A339888C2011C71F00E8282C /* HuobiSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuobiSocket.swift; sourceTree = "<group>"; };
 		A33988912011CB3A00E8282C /* HMListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMListViewController.swift; sourceTree = "<group>"; };
 		A33988922011CB3A00E8282C /* HMListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HMListViewController.xib; sourceTree = "<group>"; };
 		A33988962011CB9300E8282C /* HMCoinListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMCoinListCell.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				A3920F74201ADAB0005C8012 /* Actions */,
-				A3920F6D201AD65F005C8012 /* DataSource */,
 				A3920F6E201AD667005C8012 /* Models */,
 				A33988952011CB4900E8282C /* Views */,
 				A33988902011CB1400E8282C /* Controllers */,
@@ -113,14 +110,6 @@
 				A33988962011CB9300E8282C /* HMCoinListCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		A3920F6D201AD65F005C8012 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				A339888C2011C71F00E8282C /* HuobiSocket.swift */,
-			);
-			path = DataSource;
 			sourceTree = "<group>";
 		};
 		A3920F6E201AD667005C8012 /* Models */ = {
@@ -302,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A339888D2011C71F00E8282C /* HuobiSocket.swift in Sources */,
 				A339888B2011C70600E8282C /* Models.swift in Sources */,
 				A3920F76201ADAC2005C8012 /* PopoverAction.swift in Sources */,
 				A33988932011CB3A00E8282C /* HMListViewController.swift in Sources */,

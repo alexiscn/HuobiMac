@@ -1,28 +1,27 @@
 //
 //  HuobiSocket.swift
-//  HuobiMac
+//  HuobiSwift
 //
-//  Created by xu.shuifeng on 19/01/2018.
-//  Copyright © 2018 shuifeng.me. All rights reserved.
+//  Created by xushuifeng on 27/01/2018.
 //
 
 import Foundation
 import Starscream
 import Gzip
 
-protocol HuobiSocketDelegate: class {
+public protocol HuobiSocketDelegate: class {
     func huobiSocketDidConnected(_ huobiSocket: HuobiSocket)
     func huobiSocket(_ huobiSocket: HuobiSocket, didDisConnectError error: Error?)
-    func huobiSocket(_ huobiSocket: HuobiSocket, didReceiveKLine kLine: KLine)
+    func huobiSocket(_ huobiSocket: HuobiSocket, didReceiveKLine kLine: HBKLine)
 }
 
-class HuobiSocket {
+open class HuobiSocket: NSObject {
     
-    let HOST_URLSTRING = "wss://api.huobi.pro/ws"
+    fileprivate let HOST_URLSTRING = "wss://api.huobi.pro/ws"
     
-    var webSocket: WebSocket?
+    fileprivate var webSocket: WebSocket?
     
-    weak var delegate: HuobiSocketDelegate?
+    public weak var delegate: HuobiSocketDelegate?
     
     public func connect() {
         let socket = WebSocket(url: URL(string: HOST_URLSTRING)!)
@@ -68,12 +67,12 @@ class HuobiSocket {
 
 extension HuobiSocket: WebSocketDelegate {
     
-    func websocketDidConnect(socket: WebSocketClient) {
+    public func websocketDidConnect(socket: WebSocketClient) {
         print("websocketDidConnect")
         self.delegate?.huobiSocketDidConnected(self)
     }
     
-    func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
+    public func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
         //print("websocketDidReceiveData")
         if data.isGzipped {
             if let decompressedData = try? data.gunzipped(),
@@ -85,7 +84,7 @@ extension HuobiSocket: WebSocketDelegate {
                 }
                 
                 do {
-                    let obj = try JSONDecoder().decode(KLine.self, from: decompressedData)
+                    let obj = try JSONDecoder().decode(HBKLine.self, from: decompressedData)
                     self.delegate?.huobiSocket(self, didReceiveKLine: obj)
                 } catch(let err) {
                     print(content)
@@ -95,14 +94,12 @@ extension HuobiSocket: WebSocketDelegate {
         }
     }
     
-    func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
+    public func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         print("websocketDidDisconnect")
         self.delegate?.huobiSocket(self, didDisConnectError: error)
     }
     
-    func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
-        print("websocketDidReceiveMessage")
+    public func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
+        
     }
 }
-
-

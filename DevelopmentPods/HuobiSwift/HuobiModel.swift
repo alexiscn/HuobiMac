@@ -7,9 +7,7 @@
 
 import Foundation
 
-
-
-enum HBSymbol: String {
+public enum HBSymbol: String {
     // usdt
     case btcusdt
     case bchusdt
@@ -35,7 +33,7 @@ enum HBSymbol: String {
 }
 
 //K线类型
-enum HBPeroid: String {
+public enum HBPeroid: String {
     case minute1 = "1min"
     case minute5 = "5min"
     case minute15 = "15min"
@@ -47,6 +45,6 @@ enum HBPeroid: String {
     case year = "1year"
 }
 
-enum HBDepthStep: String {
+public enum HBDepthStep: String {
     case step0, step1, step2, step3, step4, step5
 }

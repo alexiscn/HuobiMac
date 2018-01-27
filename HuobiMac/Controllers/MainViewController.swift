@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import HuobiSwift
 
 class MainViewController: NSViewController, HuobiSocketDelegate {
 
@@ -69,7 +70,7 @@ class MainViewController: NSViewController, HuobiSocketDelegate {
         print("error:\(error?.localizedDescription)")
     }
     
-    func huobiSocket(_ huobiSocket: HuobiSocket, didReceiveKLine kLine: KLine) {
+    func huobiSocket(_ huobiSocket: HuobiSocket, didReceiveKLine kLine: HBKLine) {
         //kLine.ch
         USDTListcontroller.updateData(kLine)
     }

@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import HuobiSwift
 
 class HMCoinListCell: NSTableCellView {
     
@@ -25,7 +26,7 @@ class HMCoinListCell: NSTableCellView {
         // Drawing code here.
     }
     
-    public func updateData(_ data: KLine) {
+    public func updateData(_ data: HBKLine) {
         
         if data.tick.rate < 0 {
             rateLabel.textColor = redColor
@@ -45,7 +46,7 @@ class HMCoinListCell: NSTableCellView {
     
     class func view(_ tableView: NSTableView, owner: Any?, subject: Any?) -> NSView {
         let view = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier("coinCellViewIdentifier"), owner: owner) as! HMCoinListCell
-        if let line = subject as? KLine {
+        if let line = subject as? HBKLine {
             view.updateData(line)
         }
         return view
