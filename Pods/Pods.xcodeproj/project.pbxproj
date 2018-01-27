@@ -38,6 +38,7 @@
 		A22A7A40AD89AE87EDF39AF264327CCE /* GenericNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F50E0890D814F85A9532F516476B06 /* GenericNetworking.framework */; };
 		A2867CA08ACE3718E5FA695774F0E12E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4488F1E9D64B7C74E9C201ABAEB31994 /* Cocoa.framework */; };
 		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B67F7DE1728A0EAA4DC4EBECE3841 /* NetworkReachabilityManager.swift */; };
+		A384E3EE201C645E0064E881 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384E3ED201C645E0064E881 /* SHA256.swift */; };
 		A3D3E57D76B38580B63117EEC8654D7D /* HuobiSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22368FEE9DF4C9688CEABEA9D0C1B7DB /* HuobiSocket.swift */; };
 		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 221048E88DFBD6337B6AEC4919B8C67D /* Alamofire-dummy.m */; };
 		AD48D17F993BD2A45E097CD824DBA040 /* HuobiSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95778A362460805823EEDBDE7DACC72A /* HuobiSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -177,6 +178,7 @@
 		95778A362460805823EEDBDE7DACC72A /* HuobiSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HuobiSwift-umbrella.h"; sourceTree = "<group>"; };
 		95F275EED973CD2665E2F19C1637688F /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		9A40A7C70C070D6031610B65C07AAFCA /* GzipSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GzipSwift-umbrella.h"; sourceTree = "<group>"; };
+		A384E3ED201C645E0064E881 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		A4D89A64CD8739F003BDE7ACB84413B4 /* GenericNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GenericNetworking.modulemap; sourceTree = "<group>"; };
 		A9673259DBD79D2539EE32306791A3DA /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		AA94981A4BE55B7AFB7E2C3932949478 /* GenericNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -332,6 +334,7 @@
 				22368FEE9DF4C9688CEABEA9D0C1B7DB /* HuobiSocket.swift */,
 				A3DEA253229918CE0BB3FD05BF4CAE26 /* Pod */,
 				D03D186D289E6A789ABC59B66AC2B2FB /* Support Files */,
+				A384E3ED201C645E0064E881 /* SHA256.swift */,
 			);
 			name = HuobiSwift;
 			path = ../DevelopmentPods/HuobiSwift;
@@ -746,6 +749,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11693381A5279C27891AD27DC484E893 /* HuobiAPI.swift in Sources */,
+				A384E3EE201C645E0064E881 /* SHA256.swift in Sources */,
 				23EDB8E8288DA81129172C28821015DC /* HuobiAPISignature.swift in Sources */,
 				FFFE2700E79B5C75EFAA504E30E4C014 /* HuobiModel.swift in Sources */,
 				83A6A229AF102C26B72FB54632EBB796 /* HuobiResponseModel.swift in Sources */,

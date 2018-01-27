@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 class HuobiAPISignature {
     
     static func sign(method: String, params: [String: String]) {
@@ -14,3 +15,4 @@ class HuobiAPISignature {
     }
     
 }
+

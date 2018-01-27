@@ -8,9 +8,19 @@
 import Foundation
 import GenericNetworking
 
-class HuobiAPI {
+public class HuobiAPI {
     
-    static let baseURLString = "https://api.huobi.pro"
+    fileprivate static let baseURLString = "https://api.huobi.pro"
+    
+    fileprivate static var apikey: String?
+    
+    fileprivate static var secretkey: String?
+    
+    public static func configurate(with apiKey: String, secretKey: String) {
+        HuobiAPI.apikey = apiKey
+        HuobiAPI.secretkey = secretkey
+        GenericNetworking.baseURLString = baseURLString
+    }
     
     /// 获取K线数据
     ///
@@ -19,7 +29,7 @@ class HuobiAPI {
     ///   - period: K线类型
     ///   - size: 获取数量, 默认值：150
     ///   - completion: 请求回调
-    static func getHistoryKLine(symbol: HBSymbol, period: HBPeroid, size: Int = 150, completion: @escaping GenericNetworkingCompletion<Int>) {
+    public static func getHistoryKLine(symbol: HBSymbol, period: HBPeroid, size: Int = 150, completion: @escaping GenericNetworkingCompletion<HBKLine>) {
         let path = "/market/history/kline"
         var params: [String: Any] = [:]
         params["symbol"] = symbol.rawValue
