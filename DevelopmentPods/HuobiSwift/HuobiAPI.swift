@@ -16,6 +16,12 @@ public class HuobiAPI {
     
     fileprivate static var secretkey: String?
     
+    
+    /// 配置HuoboAPI的参数
+    ///
+    /// - Parameters:
+    ///   - apiKey: APIKEY 可以在火币网页版 安全中心 - API 访问中申请
+    ///   - secretKey: SecretKey为用户对请求进行签名的密钥
     public static func configurate(with apiKey: String, secretKey: String) {
         HuobiAPI.apikey = apiKey
         HuobiAPI.secretkey = secretkey
@@ -35,7 +41,7 @@ public class HuobiAPI {
         params["symbol"] = symbol.rawValue
         params["period"] = period.rawValue
         params["size"] = size
-        GenericNetworking.requestJSON(path: path, parameters: params, completion: completion)
+        GenericNetworking.getJSON(path: path, parameters: params, completion: completion)
     }
 
     /// 获取聚合行情(Ticker)
@@ -46,7 +52,7 @@ public class HuobiAPI {
     public static func getMerged(symbol: HBSymbol, completion: @escaping GenericNetworkingCompletion<Int>) {
         let path = "/market/detail/merged"
         let params = ["symbol": symbol.rawValue]
-        GenericNetworking.requestJSON(path: path, parameters: params, completion: completion)
+        GenericNetworking.getJSON(path: path, parameters: params, completion: completion)
     }
  
     
@@ -56,10 +62,10 @@ public class HuobiAPI {
     ///   - symbol: 交易对, btcusdt, bchbtc, rcneth ...
     ///   - depth: Depth 类型, step0, step1, step2, step3, step4, step5（合并深度0-5）；step0时，不合并深度
     ///   - completion: 请求回调
-    public static func getMarketDepth(symbol: HBSymbol, depth: HBDepthStep, completion: @escaping GenericNetworkingCompletion<Int>) {
+    public static func getMarketDepth(symbol: HBSymbol, depth: HBDepthStep, completion: @escaping GenericNetworkingCompletion<HBDepthResponse>) {
         let path = "/market/depth"
         let params = ["symbol": symbol.rawValue, "depth": depth.rawValue]
-        GenericNetworking.requestJSON(path: path, parameters: params, completion: completion)
+        GenericNetworking.getJSON(path: path, parameters: params, completion: completion)
     }
     
     
@@ -68,10 +74,10 @@ public class HuobiAPI {
     /// - Parameters:
     ///   - symbol: 交易对, btcusdt, bchbtc, rcneth ...
     ///   - completion: 请求回调
-    public static func getMarketTradeDetail(symbol: HBSymbol, completion: @escaping GenericNetworkingCompletion<Int>) {
+    public static func getMarketTradeDetail(symbol: HBSymbol, completion: @escaping GenericNetworkingCompletion<HBTradeDetailResponse>) {
         let path = "/market/trade"
         let params = ["symbol": symbol.rawValue]
-        GenericNetworking.requestJSON(path: path, parameters: params, completion: completion)
+        GenericNetworking.getJSON(path: path, parameters: params, completion: completion)
     }
     
     
@@ -84,7 +90,7 @@ public class HuobiAPI {
     public static func getMarketHistoryTrade(symbol: HBSymbol, size: Int = 1, completion: @escaping GenericNetworkingCompletion<Int>) {
         let path = "/market/history/trade"
         let params: [String: Any] = ["symbol": symbol.rawValue, "size": size]
-        GenericNetworking.requestJSON(path: path, parameters: params, completion: completion)
+        GenericNetworking.getJSON(path: path, parameters: params, completion: completion)
     }
 }
 
@@ -96,7 +102,7 @@ extension HuobiAPI {
     /// - Parameter completion: 请求回调
     public static func getSymbols(completion: @escaping GenericNetworkingCompletion<HBSupportSymbols>) {
         let path = "/v1/common/symbols"
-        GenericNetworking.requestJSON(baseURLString: baseURLString, path: path, completion: completion)
+        GenericNetworking.getJSON(path: path, completion: completion)
     }
     
     /// 查询系统支持的所有币种
@@ -104,7 +110,7 @@ extension HuobiAPI {
     /// - Parameter completion: 请求回调
     public static func getCurrencys(completion: @escaping GenericNetworkingCompletion<HBCurrencys>) {
         let path = "/v1/common/currencys"
-        GenericNetworking.requestJSON(baseURLString: baseURLString, path: path, completion: completion)
+        GenericNetworking.getJSON(path: path, completion: completion)
     }
     
     /// 查询系统当前时间
@@ -112,7 +118,7 @@ extension HuobiAPI {
     /// - Parameter completion: 请求回调
     public static func getServerTimestamp(completion: @escaping GenericNetworkingCompletion<HBServerTimestamp>) {
         let path = "/v1/common/timestamp"
-        GenericNetworking.requestJSON(baseURLString: baseURLString, path: path, completion: completion)
+        GenericNetworking.getJSON(path: path, completion: completion)
     }
 }
 

@@ -3,79 +3,79 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D28426769958B042FF868980A916D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55D7B8D7E28E7855E7D4C0EEF858C61 /* Alamofire.framework */; };
+		0DC2907D07F8D64FBFF50C2577FDAF19 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF67445D25617B651FED36BF8ED59B /* Compression.swift */; };
 		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B2AAE01017A5E0F902985FA162597 /* Timeline.swift */; };
-		11693381A5279C27891AD27DC484E893 /* HuobiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE85BEE0DAFD37024270B3A2B8A9065 /* HuobiAPI.swift */; };
 		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8FCA07B94B3CDD3F5F79422C5EA6BE /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23EDB8E8288DA81129172C28821015DC /* HuobiAPISignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5AF7F7C180C3D0D1684B991DEB845 /* HuobiAPISignature.swift */; };
-		3032562B0E8F9A455F2A58AB4BB90C1E /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F30C3FD2B0E32AA94B57AAE6BF6756 /* Starscream.framework */; };
+		26214485EB0DA7DA5F2CE0313911A035 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4488F1E9D64B7C74E9C201ABAEB31994 /* Cocoa.framework */; };
+		2C2E431C35F7ED0437E481C2F4C45B34 /* HuobiSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081932C552A995A56922195C3A09756 /* HuobiSocket.swift */; };
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E436E9D300B9753E6B631BDAFC9A6B /* TaskDelegate.swift */; };
 		3B386838359E291951D19EA28BEE802E /* Data+Gzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166EB82C8CA3AE65A20EB2D1B96FBDD1 /* Data+Gzip.swift */; };
+		3C5609C5FD6A62C288C4D8C30F6260E7 /* HuobiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59009932BF80EC7A82512F0B361EF1CE /* HuobiAPI.swift */; };
 		3F10865CEA003AB7087F05CC6CDFDB91 /* GenericNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D5B7E335FAB237D943AB5F3304E08D /* GenericNetworking-dummy.m */; };
 		460793810240584EFE56EA33F4D1FE29 /* GenericNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC1443035D38F43ED594809A25BF5CAA /* GenericNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46E765791814B47868ED628C6EBA9F98 /* HuobiSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCBB4B1F4889970F169A6D7225E439 /* HuobiSwift-dummy.m */; };
+		4BB7BD3F1AA2AD6CC9146FDBA4D309C3 /* GenericNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F50E0890D814F85A9532F516476B06 /* GenericNetworking.framework */; };
 		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F90E5BA3736D74CE8FD99A28E8ABF1 /* Request.swift */; };
+		5389AC74C3CE34C1DB0908DF1906E700 /* Gzip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929F76C4B2E778BD0A5909ECE7E232B5 /* Gzip.framework */; };
 		55A4E9CF3193F865C1E8C6522B51A671 /* GzipSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A40A7C70C070D6031610B65C07AAFCA /* GzipSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F31785C0056CCCFA5FFC1B7F78C2AAC /* GzipSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430BA86ABD8B8AEA83BE675DE172C57 /* GzipSwift-dummy.m */; };
+		6009ADD899FA17952B95ADA067A1B728 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67D677026FF0AA09FCC877D569D2249 /* SSLSecurity.swift */; };
 		608D91382019F025496F1578FF19C9B8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55D7B8D7E28E7855E7D4C0EEF858C61 /* Alamofire.framework */; };
 		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9673259DBD79D2539EE32306791A3DA /* DispatchQueue+Alamofire.swift */; };
 		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4651E6AE3231BDEAB7EDBB220561339 /* ServerTrustPolicy.swift */; };
 		664EBE6FC43101B03E799EE5046884F1 /* GenericNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B9B1438188CC2AA0BDA7435073408 /* GenericNetworking.swift */; };
-		6BFA96625AFF384A7A2384F567C05B35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4488F1E9D64B7C74E9C201ABAEB31994 /* Cocoa.framework */; };
-		747AD103E198BB210F5CF4BA8491F464 /* Gzip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929F76C4B2E778BD0A5909ECE7E232B5 /* Gzip.framework */; };
-		7ACB9BF34CAEBA744A3A716606FF56C2 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3292F77771EED372DD1FBAB03DD98 /* WebSocket.swift */; };
 		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13280B5D43B8081AAFF3A5F036FB7305 /* SessionDelegate.swift */; };
 		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469D606CCF471B3E9B993EE40D61BCD /* Result.swift */; };
-		83A6A229AF102C26B72FB54632EBB796 /* HuobiResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7054ED27FA7E12F786AE589CEB7185 /* HuobiResponseModel.swift */; };
 		83CD25E7C29A5F637B6F7C7F35D6CECB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4488F1E9D64B7C74E9C201ABAEB31994 /* Cocoa.framework */; };
+		867CAB6FC2B8B02412634E62806C5EFC /* HuobiResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CD08202FCE054CD06A02AABD295AE /* HuobiResponseModel.swift */; };
+		8BBD1E85BF6D3BFD1D7BC1A3C71146E3 /* HuobiSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA005603A7360DC4179634BD72F13C9 /* HuobiSwift-dummy.m */; };
+		8BDEAD134134FA952FD80BFD80476134 /* HuobiSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E3D16884093BCE6FCE0EF74B508B8C1 /* HuobiSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CBC450F334E14312C81046542D44D26 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4488F1E9D64B7C74E9C201ABAEB31994 /* Cocoa.framework */; };
 		9B7F28D5A3F70AE55DCD384D3DC19D2D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4488F1E9D64B7C74E9C201ABAEB31994 /* Cocoa.framework */; };
 		9DB91F7B392D045AB8451F515D20D649 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4488F1E9D64B7C74E9C201ABAEB31994 /* Cocoa.framework */; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D5533BE8A939E7C8A4F28533F1E38B /* AFError.swift */; };
-		A22A7A40AD89AE87EDF39AF264327CCE /* GenericNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F50E0890D814F85A9532F516476B06 /* GenericNetworking.framework */; };
-		A2867CA08ACE3718E5FA695774F0E12E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4488F1E9D64B7C74E9C201ABAEB31994 /* Cocoa.framework */; };
+		A230B685D7115105D47F38A995136DDC /* HuobiAPISignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8A8B677E07AA6AB7D61E275E49A75 /* HuobiAPISignature.swift */; };
 		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B67F7DE1728A0EAA4DC4EBECE3841 /* NetworkReachabilityManager.swift */; };
-		A384E3EE201C645E0064E881 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384E3ED201C645E0064E881 /* SHA256.swift */; };
-		A3D3E57D76B38580B63117EEC8654D7D /* HuobiSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22368FEE9DF4C9688CEABEA9D0C1B7DB /* HuobiSocket.swift */; };
 		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 221048E88DFBD6337B6AEC4919B8C67D /* Alamofire-dummy.m */; };
-		AD48D17F993BD2A45E097CD824DBA040 /* HuobiSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95778A362460805823EEDBDE7DACC72A /* HuobiSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA146DEDFE0AB01C57E3CE0E888D31A4 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E0B1445C790BF992033399EDA0914E /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084A793C2811973B6F58D15AB1161FA /* SessionManager.swift */; };
-		B6409D0F43BE8098A1F2C3350B72AB4A /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A65561AA8DCF85EB5B214060123044 /* Starscream-dummy.m */; };
 		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DE8D31413D8500FFD695D45D91503 /* MultipartFormData.swift */; };
 		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894CBA901B682127C845CB0AAF68B97 /* Validation.swift */; };
-		BD54D9E5C8F9842AEEE8ED758B9FCE19 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55D7B8D7E28E7855E7D4C0EEF858C61 /* Alamofire.framework */; };
 		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE331922CD49EB2C5F9809771A114AD1 /* ParameterEncoding.swift */; };
-		C5DE1C4DFFCE103729883630B31EAC3C /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF67445D25617B651FED36BF8ED59B /* Compression.swift */; };
 		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9F74AD65B2F950F4018022D4FEFE92 /* Response.swift */; };
-		DF3E1776B11A4BE27F3024FFE69D1518 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E0B1445C790BF992033399EDA0914E /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC47B1893E35C0F4A47F87F3A75F28D8 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F30C3FD2B0E32AA94B57AAE6BF6756 /* Starscream.framework */; };
+		D0CB02D900B0940BA001D8827901BD6D /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = E596D11EC42E32F31161D8EAB54E2CF8 /* SHA256.swift */; };
+		D51FA18BAD50B2386759A5919B02EF5D /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A65561AA8DCF85EB5B214060123044 /* Starscream-dummy.m */; };
 		DFC5513217BEFA5665299DBA2D9BB6C8 /* Pods-HuobiMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 926C4846CEC4431495EC53D2E9FC4975 /* Pods-HuobiMac-dummy.m */; };
-		EF226A60A4D61DB2FA90B5D6F4AEBADE /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67D677026FF0AA09FCC877D569D2249 /* SSLSecurity.swift */; };
+		E91A4296B0855B0483DA2BBB36355164 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3292F77771EED372DD1FBAB03DD98 /* WebSocket.swift */; };
 		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F275EED973CD2665E2F19C1637688F /* Notifications.swift */; };
 		F56687467B23B0D9D8502B2BBBE3F4BF /* Pods-HuobiMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCAAF43F1E502D47D3CAF5DEB2C4CFA1 /* Pods-HuobiMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0A2B0EC0D3F81F7E2776949DFDF2A /* ResponseSerialization.swift */; };
 		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33220F4010B53CE6ACEABEA28D0C0FC /* Alamofire.swift */; };
-		FFFE2700E79B5C75EFAA504E30E4C014 /* HuobiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4223F4331B88A7F865671A26F48D63D /* HuobiModel.swift */; };
+		F8DC35EEF470F527583C72698129E85C /* HuobiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714BF2F671B8DBF3C80A816C28D46DBF /* HuobiModel.swift */; };
+		FD308F94FB9772770B523A4E38DCF664 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4488F1E9D64B7C74E9C201ABAEB31994 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		17E97C7CF8922EC5D7F6CE1CA0D063D4 /* PBXContainerItemProxy */ = {
+		0655944E9CF64DD7710A5D3977D251F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ABBEED6FEF7A881DBEDC75DD41E8FF9A;
+			remoteGlobalIDString = 103C159A8E41B13CC7B3B8B027604542;
+			remoteInfo = GzipSwift;
+		};
+		4032F0EA55D79DD8B2C0F3FB378E3420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B8E1D2E55FA697380CE2B6395B5CB9E;
 			remoteInfo = Starscream;
 		};
 		4BF901E76E86D54D4927649E6EBA2B70 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
-			remoteInfo = Alamofire;
-		};
-		897BAA3F55CA28953FBE5BF90BA5C40F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -89,18 +89,32 @@
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
+		BC1A8A7848322E1AE1C14A3E9086FAB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3643B10C451066B13570008ABD4710B6;
+			remoteInfo = GenericNetworking;
+		};
 		C3A43C0B76B0294E0BDF928C040BA698 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 97FD83865328F0F74C73F2C1F20F04AC;
+			remoteGlobalIDString = D2789278565948760CCD51345F562C68;
 			remoteInfo = HuobiSwift;
+		};
+		CD2E73E7AC7198343519C013C7BB2879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
 		};
 		CD538F5C1937124FE3A71B0F035126CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ABBEED6FEF7A881DBEDC75DD41E8FF9A;
+			remoteGlobalIDString = 4B8E1D2E55FA697380CE2B6395B5CB9E;
 			remoteInfo = Starscream;
 		};
 		D825573CAFB2416F0859C3C6F845A2B4 /* PBXContainerItemProxy */ = {
@@ -117,81 +131,68 @@
 			remoteGlobalIDString = 3643B10C451066B13570008ABD4710B6;
 			remoteInfo = GenericNetworking;
 		};
-		F04094E8E1804C694AA0D9E44EB0F2B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3643B10C451066B13570008ABD4710B6;
-			remoteInfo = GenericNetworking;
-		};
-		F139AA9FE64FBC62A4D773243AF64530 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 103C159A8E41B13CC7B3B8B027604542;
-			remoteInfo = GzipSwift;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036CD08202FCE054CD06A02AABD295AE /* HuobiResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuobiResponseModel.swift; sourceTree = "<group>"; };
+		05BB5F6F05064874DD5780439855B103 /* HuobiSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = HuobiSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		085A25D05C510D3928346260864AB325 /* Pods-HuobiMac-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HuobiMac-resources.sh"; sourceTree = "<group>"; };
-		0CF5AF7F7C180C3D0D1684B991DEB845 /* HuobiAPISignature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuobiAPISignature.swift; sourceTree = "<group>"; };
 		0D7B9B1438188CC2AA0BDA7435073408 /* GenericNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericNetworking.swift; path = GenericNetworking/Classes/GenericNetworking.swift; sourceTree = "<group>"; };
-		0FCCBB4B1F4889970F169A6D7225E439 /* HuobiSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HuobiSwift-dummy.m"; sourceTree = "<group>"; };
 		12D5533BE8A939E7C8A4F28533F1E38B /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		13280B5D43B8081AAFF3A5F036FB7305 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		166EB82C8CA3AE65A20EB2D1B96FBDD1 /* Data+Gzip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Gzip.swift"; path = "Sources/Gzip/Data+Gzip.swift"; sourceTree = "<group>"; };
-		18BD2AFCDC834D418C3AF247DE95130A /* Pods_HuobiMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuobiMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BD2AFCDC834D418C3AF247DE95130A /* Pods_HuobiMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HuobiMac.framework; path = "Pods-HuobiMac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F90E5BA3736D74CE8FD99A28E8ABF1 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		1B8FCA07B94B3CDD3F5F79422C5EA6BE /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		1F583F9C62A583C5A7232D0C34C64B7C /* Gzip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gzip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F583F9C62A583C5A7232D0C34C64B7C /* Gzip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gzip.framework; path = GzipSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		221048E88DFBD6337B6AEC4919B8C67D /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		22368FEE9DF4C9688CEABEA9D0C1B7DB /* HuobiSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuobiSocket.swift; sourceTree = "<group>"; };
 		228B67F7DE1728A0EAA4DC4EBECE3841 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		2DC07636851B3C6F2A24439C2F4F45AD /* HuobiSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HuobiSwift.modulemap; sourceTree = "<group>"; };
+		2E3D16884093BCE6FCE0EF74B508B8C1 /* HuobiSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HuobiSwift-umbrella.h"; sourceTree = "<group>"; };
 		31CD0026019923D87153EC9B6CBABD4A /* GzipSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GzipSwift-prefix.pch"; sourceTree = "<group>"; };
 		3376B48684C9A07202208A09082070D6 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		33AA060DBC43BC4DDAD4E0E2A67F72CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AA0A2B0EC0D3F81F7E2776949DFDF2A /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		42B3ED52E21C8DCCE89061EDBA7319B8 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
 		4488F1E9D64B7C74E9C201ABAEB31994 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		47A65561AA8DCF85EB5B214060123044 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
 		49D5B7E335FAB237D943AB5F3304E08D /* GenericNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GenericNetworking-dummy.m"; sourceTree = "<group>"; };
+		4B7D8424B00A6BBEAAA001E30784C62B /* HuobiSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HuobiSwift.modulemap; sourceTree = "<group>"; };
 		51E436E9D300B9753E6B631BDAFC9A6B /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		5B55DBD67BC11EBEC96714D833CAD156 /* HuobiSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HuobiSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59009932BF80EC7A82512F0B361EF1CE /* HuobiAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuobiAPI.swift; sourceTree = "<group>"; };
+		5B55DBD67BC11EBEC96714D833CAD156 /* HuobiSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HuobiSwift.framework; path = HuobiSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E0B1445C790BF992033399EDA0914E /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
-		673D064E52796DA4130B94B080123C31 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		673D064E52796DA4130B94B080123C31 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F50E0890D814F85A9532F516476B06 /* GenericNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9F74AD65B2F950F4018022D4FEFE92 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		6CC72785236B28EDE2D4C6CB2E02D91D /* HuobiSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HuobiSwift.xcconfig; sourceTree = "<group>"; };
+		6DD8A8B677E07AA6AB7D61E275E49A75 /* HuobiAPISignature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuobiAPISignature.swift; sourceTree = "<group>"; };
 		6E8E1CB2FF512BA2B3B67DCCDD090610 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		714BF2F671B8DBF3C80A816C28D46DBF /* HuobiModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuobiModel.swift; sourceTree = "<group>"; };
 		71ABF749380042579591C1AEE314C11A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73E397579E6B85018F0AD68375116F6A /* HuobiSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HuobiSwift.xcconfig; sourceTree = "<group>"; };
 		76EF67445D25617B651FED36BF8ED59B /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression.swift; sourceTree = "<group>"; };
 		78DDC10DAA65ECB7D1F479D866710B6B /* Pods-HuobiMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HuobiMac.release.xcconfig"; sourceTree = "<group>"; };
-		7EEA38B09DD70A4B9A0C19C96A4E8CAD /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		7EEA38B09DD70A4B9A0C19C96A4E8CAD /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		884601C81E5F1ABB88D48B94EF563412 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C1856256998B82BF12A52F842646A02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E7054ED27FA7E12F786AE589CEB7185 /* HuobiResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuobiResponseModel.swift; sourceTree = "<group>"; };
 		926C4846CEC4431495EC53D2E9FC4975 /* Pods-HuobiMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HuobiMac-dummy.m"; sourceTree = "<group>"; };
 		929F76C4B2E778BD0A5909ECE7E232B5 /* Gzip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gzip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9430BA86ABD8B8AEA83BE675DE172C57 /* GzipSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GzipSwift-dummy.m"; sourceTree = "<group>"; };
-		95778A362460805823EEDBDE7DACC72A /* HuobiSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HuobiSwift-umbrella.h"; sourceTree = "<group>"; };
 		95F275EED973CD2665E2F19C1637688F /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		9A40A7C70C070D6031610B65C07AAFCA /* GzipSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GzipSwift-umbrella.h"; sourceTree = "<group>"; };
-		A384E3ED201C645E0064E881 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
-		A4D89A64CD8739F003BDE7ACB84413B4 /* GenericNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GenericNetworking.modulemap; sourceTree = "<group>"; };
+		A4D89A64CD8739F003BDE7ACB84413B4 /* GenericNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GenericNetworking.modulemap; sourceTree = "<group>"; };
 		A9673259DBD79D2539EE32306791A3DA /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		AA94981A4BE55B7AFB7E2C3932949478 /* GenericNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA94981A4BE55B7AFB7E2C3932949478 /* GenericNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GenericNetworking.framework; path = GenericNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB6C9DBCB29004612BC9BC57B761152 /* Pods-HuobiMac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HuobiMac-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AFA005603A7360DC4179634BD72F13C9 /* HuobiSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HuobiSwift-dummy.m"; sourceTree = "<group>"; };
+		B081932C552A995A56922195C3A09756 /* HuobiSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuobiSocket.swift; sourceTree = "<group>"; };
 		B0F30C3FD2B0E32AA94B57AAE6BF6756 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B22B499A41A33294C431DF439DEBCDC7 /* GzipSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GzipSwift.modulemap; sourceTree = "<group>"; };
+		B22B499A41A33294C431DF439DEBCDC7 /* GzipSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GzipSwift.modulemap; sourceTree = "<group>"; };
 		B33220F4010B53CE6ACEABEA28D0C0FC /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		B4223F4331B88A7F865671A26F48D63D /* HuobiModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuobiModel.swift; sourceTree = "<group>"; };
 		BA9DE8D31413D8500FFD695D45D91503 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		BBFBF4A69336C25A4FA9A7B73C4AB170 /* Pods-HuobiMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HuobiMac.debug.xcconfig"; sourceTree = "<group>"; };
 		BCFF4EC515DD0E41CA8E1EE9B322BF48 /* Pods-HuobiMac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HuobiMac-acknowledgements.plist"; sourceTree = "<group>"; };
 		BD8CDC5A276792C859F061E3873872F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFF1356FD0E6C8561603D525C6F35B15 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Starscream.modulemap; sourceTree = "<group>"; };
+		BFF1356FD0E6C8561603D525C6F35B15 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Starscream.modulemap; sourceTree = "<group>"; };
 		C2F3292F77771EED372DD1FBAB03DD98 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/WebSocket.swift; sourceTree = "<group>"; };
 		C55D7B8D7E28E7855E7D4C0EEF858C61 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E07F4A220A8BC38DA330A6118A6F30 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
@@ -199,42 +200,29 @@
 		CC1443035D38F43ED594809A25BF5CAA /* GenericNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GenericNetworking-umbrella.h"; sourceTree = "<group>"; };
 		CCAAF43F1E502D47D3CAF5DEB2C4CFA1 /* Pods-HuobiMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HuobiMac-umbrella.h"; sourceTree = "<group>"; };
 		CE0B2AAE01017A5E0F902985FA162597 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		D017726B7C12C8278D62402E12FB96D0 /* HuobiSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HuobiSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D2463F57DEE4585AEB0768F100EAFE19 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2463F57DEE4585AEB0768F100EAFE19 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D894CBA901B682127C845CB0AAF68B97 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		DC3AA6EF447CADFACD4046852F7F735C /* GzipSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GzipSwift.xcconfig; sourceTree = "<group>"; };
 		DDE0FF922A50980CD27D8FCD0A97C31F /* GenericNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GenericNetworking.xcconfig; sourceTree = "<group>"; };
+		E2EDBEBC9742AB881AC9ACF17392B560 /* HuobiSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HuobiSwift-prefix.pch"; sourceTree = "<group>"; };
+		E596D11EC42E32F31161D8EAB54E2CF8 /* SHA256.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		E5E8200D4DB297F248CA6032C8E8BBFD /* Pods-HuobiMac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HuobiMac-frameworks.sh"; sourceTree = "<group>"; };
-		E813EA946AFDAFC3C42FB051E28BF23A /* HuobiSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HuobiSwift-prefix.pch"; sourceTree = "<group>"; };
 		F084A793C2811973B6F58D15AB1161FA /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		F2FB25E067E9A328F9B7E055403D2FFA /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		F4651E6AE3231BDEAB7EDBB220561339 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		F469D606CCF471B3E9B993EE40D61BCD /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		F67D677026FF0AA09FCC877D569D2249 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/SSLSecurity.swift; sourceTree = "<group>"; };
 		FA4A101A8A24FEF89189F3E275F8FF2F /* GenericNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GenericNetworking-prefix.pch"; sourceTree = "<group>"; };
-		FDE85BEE0DAFD37024270B3A2B8A9065 /* HuobiAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HuobiAPI.swift; sourceTree = "<group>"; };
 		FE331922CD49EB2C5F9809771A114AD1 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		FF0B536ADF3E44A3359B9394B6CAAFE3 /* Pods-HuobiMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HuobiMac.modulemap"; sourceTree = "<group>"; };
+		FF0B536ADF3E44A3359B9394B6CAAFE3 /* Pods-HuobiMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HuobiMac.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09179F1663921F707D3E7A6B2EEA74C6 /* Frameworks */ = {
+		60767522C8A37D4EB2B304899B801D36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2867CA08ACE3718E5FA695774F0E12E /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14C02046B917309C4E72E9A9FCBD8897 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD54D9E5C8F9842AEEE8ED758B9FCE19 /* Alamofire.framework in Frameworks */,
-				6BFA96625AFF384A7A2384F567C05B35 /* Cocoa.framework in Frameworks */,
-				A22A7A40AD89AE87EDF39AF264327CCE /* GenericNetworking.framework in Frameworks */,
-				747AD103E198BB210F5CF4BA8491F464 /* Gzip.framework in Frameworks */,
-				3032562B0E8F9A455F2A58AB4BB90C1E /* Starscream.framework in Frameworks */,
+				FD308F94FB9772770B523A4E38DCF664 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +232,18 @@
 			files = (
 				608D91382019F025496F1578FF19C9B8 /* Alamofire.framework in Frameworks */,
 				83CD25E7C29A5F637B6F7C7F35D6CECB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B8312F8069937FC7A0AAC15C75EB36A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D28426769958B042FF868980A916D2 /* Alamofire.framework in Frameworks */,
+				26214485EB0DA7DA5F2CE0313911A035 /* Cocoa.framework in Frameworks */,
+				4BB7BD3F1AA2AD6CC9146FDBA4D309C3 /* GenericNetworking.framework in Frameworks */,
+				5389AC74C3CE34C1DB0908DF1906E700 /* Gzip.framework in Frameworks */,
+				CC47B1893E35C0F4A47F87F3A75F28D8 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,20 +324,34 @@
 			path = "../Target Support Files/GzipSwift";
 			sourceTree = "<group>";
 		};
-		4497BDBF694DD2D044CC94E01983C733 /* HuobiSwift */ = {
+		3E09C246152CB76EF63FC98D52432E37 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FDE85BEE0DAFD37024270B3A2B8A9065 /* HuobiAPI.swift */,
-				0CF5AF7F7C180C3D0D1684B991DEB845 /* HuobiAPISignature.swift */,
-				B4223F4331B88A7F865671A26F48D63D /* HuobiModel.swift */,
-				8E7054ED27FA7E12F786AE589CEB7185 /* HuobiResponseModel.swift */,
-				22368FEE9DF4C9688CEABEA9D0C1B7DB /* HuobiSocket.swift */,
-				A3DEA253229918CE0BB3FD05BF4CAE26 /* Pod */,
-				D03D186D289E6A789ABC59B66AC2B2FB /* Support Files */,
-				A384E3ED201C645E0064E881 /* SHA256.swift */,
+				98A27450EDEDC86FA9F0A4C68B1FDBBA /* HuobiSwift */,
 			);
-			name = HuobiSwift;
-			path = ../DevelopmentPods/HuobiSwift;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3FE99E91783E2637E1FA6A375E745D60 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				05BB5F6F05064874DD5780439855B103 /* HuobiSwift.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		47897079D260CD40846EE9DB751C121D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B7D8424B00A6BBEAAA001E30784C62B /* HuobiSwift.modulemap */,
+				73E397579E6B85018F0AD68375116F6A /* HuobiSwift.xcconfig */,
+				AFA005603A7360DC4179634BD72F13C9 /* HuobiSwift-dummy.m */,
+				E2EDBEBC9742AB881AC9ACF17392B560 /* HuobiSwift-prefix.pch */,
+				2E3D16884093BCE6FCE0EF74B508B8C1 /* HuobiSwift-umbrella.h */,
+				884601C81E5F1ABB88D48B94EF563412 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/HuobiSwift";
 			sourceTree = "<group>";
 		};
 		628A43495D18C80167D0AB91A8AACD4E /* Pods */ = {
@@ -373,6 +387,7 @@
 				D894CBA901B682127C845CB0AAF68B97 /* Validation.swift */,
 				063CC419540EAB063A92DC6D38AAE727 /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -410,7 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				971AD9A5B9310BB7FA6465991440E6FA /* Development Pods */,
+				3E09C246152CB76EF63FC98D52432E37 /* Development Pods */,
 				6EC68C8E8A286CB5227675609EC7BBFF /* Frameworks */,
 				628A43495D18C80167D0AB91A8AACD4E /* Pods */,
 				9BD53541FB516D99EDC7382447DB36E7 /* Products */,
@@ -424,15 +439,24 @@
 				0D7B9B1438188CC2AA0BDA7435073408 /* GenericNetworking.swift */,
 				ED324CB89EB292C8F01B5868767E976D /* Support Files */,
 			);
+			name = GenericNetworking;
 			path = GenericNetworking;
 			sourceTree = "<group>";
 		};
-		971AD9A5B9310BB7FA6465991440E6FA /* Development Pods */ = {
+		98A27450EDEDC86FA9F0A4C68B1FDBBA /* HuobiSwift */ = {
 			isa = PBXGroup;
 			children = (
-				4497BDBF694DD2D044CC94E01983C733 /* HuobiSwift */,
+				59009932BF80EC7A82512F0B361EF1CE /* HuobiAPI.swift */,
+				6DD8A8B677E07AA6AB7D61E275E49A75 /* HuobiAPISignature.swift */,
+				714BF2F671B8DBF3C80A816C28D46DBF /* HuobiModel.swift */,
+				036CD08202FCE054CD06A02AABD295AE /* HuobiResponseModel.swift */,
+				B081932C552A995A56922195C3A09756 /* HuobiSocket.swift */,
+				E596D11EC42E32F31161D8EAB54E2CF8 /* SHA256.swift */,
+				3FE99E91783E2637E1FA6A375E745D60 /* Pod */,
+				47897079D260CD40846EE9DB751C121D /* Support Files */,
 			);
-			name = "Development Pods";
+			name = HuobiSwift;
+			path = ../DevelopmentPods/HuobiSwift;
 			sourceTree = "<group>";
 		};
 		9BD53541FB516D99EDC7382447DB36E7 /* Products */ = {
@@ -448,14 +472,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A3DEA253229918CE0BB3FD05BF4CAE26 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D017726B7C12C8278D62402E12FB96D0 /* HuobiSwift.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		C470113A95AED660B346615895EFA77B /* Starscream */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,21 +480,8 @@
 				C2F3292F77771EED372DD1FBAB03DD98 /* WebSocket.swift */,
 				30CF04D817AA2B0501AF1A29F37931DD /* Support Files */,
 			);
+			name = Starscream;
 			path = Starscream;
-			sourceTree = "<group>";
-		};
-		D03D186D289E6A789ABC59B66AC2B2FB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2DC07636851B3C6F2A24439C2F4F45AD /* HuobiSwift.modulemap */,
-				6CC72785236B28EDE2D4C6CB2E02D91D /* HuobiSwift.xcconfig */,
-				0FCCBB4B1F4889970F169A6D7225E439 /* HuobiSwift-dummy.m */,
-				E813EA946AFDAFC3C42FB051E28BF23A /* HuobiSwift-prefix.pch */,
-				95778A362460805823EEDBDE7DACC72A /* HuobiSwift-umbrella.h */,
-				33AA060DBC43BC4DDAD4E0E2A67F72CE /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/HuobiSwift";
 			sourceTree = "<group>";
 		};
 		D88916162466902C2CDD102231B6D388 /* Targets Support Files */ = {
@@ -495,6 +498,7 @@
 				166EB82C8CA3AE65A20EB2D1B96FBDD1 /* Data+Gzip.swift */,
 				367109FC6B9CC54A667DD5B16E6E0080 /* Support Files */,
 			);
+			name = GzipSwift;
 			path = GzipSwift;
 			sourceTree = "<group>";
 		};
@@ -523,27 +527,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C067AC4DABAA7923FD835EFB501EE28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA146DEDFE0AB01C57E3CE0E888D31A4 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB111E5C89B48B4A709CB9603EBADE99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDEAD134134FA952FD80BFD80476134 /* HuobiSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B46A0B99B1A5CCA7619221D0886AB4D0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF3E1776B11A4BE27F3024FFE69D1518 /* Starscream-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B4B16603B9C9B1166DD044A733405DCB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD48D17F993BD2A45E097CD824DBA040 /* HuobiSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +605,23 @@
 			productReference = AA94981A4BE55B7AFB7E2C3932949478 /* GenericNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4B8E1D2E55FA697380CE2B6395B5CB9E /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153683BC4C1F26F22F04D988DC3EB8AF /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				779C67CA53EAF52AD8998CD34ABE50FD /* Sources */,
+				60767522C8A37D4EB2B304899B801D36 /* Frameworks */,
+				8C067AC4DABAA7923FD835EFB501EE28 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 673D064E52796DA4130B94B080123C31 /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
@@ -616,27 +637,6 @@
 			name = Alamofire;
 			productName = Alamofire;
 			productReference = D2463F57DEE4585AEB0768F100EAFE19 /* Alamofire.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		97FD83865328F0F74C73F2C1F20F04AC /* HuobiSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4CCC7CD3B774EEEDA08971D73EF7D4D7 /* Build configuration list for PBXNativeTarget "HuobiSwift" */;
-			buildPhases = (
-				919980FF084713C69E0D910B8B97C3CE /* Sources */,
-				14C02046B917309C4E72E9A9FCBD8897 /* Frameworks */,
-				B4B16603B9C9B1166DD044A733405DCB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				075C04D2C09638FD8A83C9B5715A61CA /* PBXTargetDependency */,
-				68B5E7E9E9B8A702D3E5050B242E6898 /* PBXTargetDependency */,
-				D742A3CCAAEC2169F436949EFD60064B /* PBXTargetDependency */,
-				42DA16514AA9EBA89103268543619645 /* PBXTargetDependency */,
-			);
-			name = HuobiSwift;
-			productName = HuobiSwift;
-			productReference = 5B55DBD67BC11EBEC96714D833CAD156 /* HuobiSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A9A6A08BA5963B477BB55A43469FDF59 /* Pods-HuobiMac */ = {
@@ -661,21 +661,25 @@
 			productReference = 18BD2AFCDC834D418C3AF247DE95130A /* Pods_HuobiMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ABBEED6FEF7A881DBEDC75DD41E8FF9A /* Starscream */ = {
+		D2789278565948760CCD51345F562C68 /* HuobiSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23B107C34A1B08EA02F4FD81803CC9B6 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildConfigurationList = 7CB0D43E463B680BAA3626ADAD455304 /* Build configuration list for PBXNativeTarget "HuobiSwift" */;
 			buildPhases = (
-				D3510A4CFD17D4E9DEE5C7F6D691F423 /* Sources */,
-				09179F1663921F707D3E7A6B2EEA74C6 /* Frameworks */,
-				B46A0B99B1A5CCA7619221D0886AB4D0 /* Headers */,
+				9813B316FC3E75B00FFEEA8F9646DD9C /* Sources */,
+				9B8312F8069937FC7A0AAC15C75EB36A /* Frameworks */,
+				AB111E5C89B48B4A709CB9603EBADE99 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				88E68B049251BF07807B8DC113B0C84E /* PBXTargetDependency */,
+				6290E6654CEFE701492F8D0A9072941D /* PBXTargetDependency */,
+				F993A9C433D4FEAFE858D39C10B60E5E /* PBXTargetDependency */,
+				2783B2D2B2DCD74EAB7558EBAB37AE27 /* PBXTargetDependency */,
 			);
-			name = Starscream;
-			productName = Starscream;
-			productReference = 673D064E52796DA4130B94B080123C31 /* Starscream.framework */;
+			name = HuobiSwift;
+			productName = HuobiSwift;
+			productReference = 5B55DBD67BC11EBEC96714D833CAD156 /* HuobiSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -702,9 +706,9 @@
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
 				3643B10C451066B13570008ABD4710B6 /* GenericNetworking */,
 				103C159A8E41B13CC7B3B8B027604542 /* GzipSwift */,
-				97FD83865328F0F74C73F2C1F20F04AC /* HuobiSwift */,
+				D2789278565948760CCD51345F562C68 /* HuobiSwift */,
 				A9A6A08BA5963B477BB55A43469FDF59 /* Pods-HuobiMac */,
-				ABBEED6FEF7A881DBEDC75DD41E8FF9A /* Starscream */,
+				4B8E1D2E55FA697380CE2B6395B5CB9E /* Starscream */,
 			);
 		};
 /* End PBXProject section */
@@ -744,17 +748,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		919980FF084713C69E0D910B8B97C3CE /* Sources */ = {
+		779C67CA53EAF52AD8998CD34ABE50FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11693381A5279C27891AD27DC484E893 /* HuobiAPI.swift in Sources */,
-				A384E3EE201C645E0064E881 /* SHA256.swift in Sources */,
-				23EDB8E8288DA81129172C28821015DC /* HuobiAPISignature.swift in Sources */,
-				FFFE2700E79B5C75EFAA504E30E4C014 /* HuobiModel.swift in Sources */,
-				83A6A229AF102C26B72FB54632EBB796 /* HuobiResponseModel.swift in Sources */,
-				A3D3E57D76B38580B63117EEC8654D7D /* HuobiSocket.swift in Sources */,
-				46E765791814B47868ED628C6EBA9F98 /* HuobiSwift-dummy.m in Sources */,
+				0DC2907D07F8D64FBFF50C2577FDAF19 /* Compression.swift in Sources */,
+				6009ADD899FA17952B95ADA067A1B728 /* SSLSecurity.swift in Sources */,
+				D51FA18BAD50B2386759A5919B02EF5D /* Starscream-dummy.m in Sources */,
+				E91A4296B0855B0483DA2BBB36355164 /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +768,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9813B316FC3E75B00FFEEA8F9646DD9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5609C5FD6A62C288C4D8C30F6260E7 /* HuobiAPI.swift in Sources */,
+				A230B685D7115105D47F38A995136DDC /* HuobiAPISignature.swift in Sources */,
+				F8DC35EEF470F527583C72698129E85C /* HuobiModel.swift in Sources */,
+				867CAB6FC2B8B02412634E62806C5EFC /* HuobiResponseModel.swift in Sources */,
+				2C2E431C35F7ED0437E481C2F4C45B34 /* HuobiSocket.swift in Sources */,
+				8BBD1E85BF6D3BFD1D7BC1A3C71146E3 /* HuobiSwift-dummy.m in Sources */,
+				D0CB02D900B0940BA001D8827901BD6D /* SHA256.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A48F2027EB7F0529057AFA933BF67F18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -775,26 +790,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3510A4CFD17D4E9DEE5C7F6D691F423 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5DE1C4DFFCE103729883630B31EAC3C /* Compression.swift in Sources */,
-				EF226A60A4D61DB2FA90B5D6F4AEBADE /* SSLSecurity.swift in Sources */,
-				B6409D0F43BE8098A1F2C3350B72AB4A /* Starscream-dummy.m in Sources */,
-				7ACB9BF34CAEBA744A3A716606FF56C2 /* WebSocket.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		075C04D2C09638FD8A83C9B5715A61CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 897BAA3F55CA28953FBE5BF90BA5C40F /* PBXContainerItemProxy */;
-		};
 		17E75953A45230C4822A50725097C82F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GenericNetworking;
@@ -804,14 +802,14 @@
 		19F0B00EB3360476876AD65A2168CFF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Starscream;
-			target = ABBEED6FEF7A881DBEDC75DD41E8FF9A /* Starscream */;
+			target = 4B8E1D2E55FA697380CE2B6395B5CB9E /* Starscream */;
 			targetProxy = CD538F5C1937124FE3A71B0F035126CD /* PBXContainerItemProxy */;
 		};
-		42DA16514AA9EBA89103268543619645 /* PBXTargetDependency */ = {
+		2783B2D2B2DCD74EAB7558EBAB37AE27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Starscream;
-			target = ABBEED6FEF7A881DBEDC75DD41E8FF9A /* Starscream */;
-			targetProxy = 17E97C7CF8922EC5D7F6CE1CA0D063D4 /* PBXContainerItemProxy */;
+			target = 4B8E1D2E55FA697380CE2B6395B5CB9E /* Starscream */;
+			targetProxy = 4032F0EA55D79DD8B2C0F3FB378E3420 /* PBXContainerItemProxy */;
 		};
 		4C79824AE27A0542D8DCC37D572371A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -819,17 +817,23 @@
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = 4BF901E76E86D54D4927649E6EBA2B70 /* PBXContainerItemProxy */;
 		};
-		68B5E7E9E9B8A702D3E5050B242E6898 /* PBXTargetDependency */ = {
+		6290E6654CEFE701492F8D0A9072941D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GenericNetworking;
 			target = 3643B10C451066B13570008ABD4710B6 /* GenericNetworking */;
-			targetProxy = F04094E8E1804C694AA0D9E44EB0F2B9 /* PBXContainerItemProxy */;
+			targetProxy = BC1A8A7848322E1AE1C14A3E9086FAB4 /* PBXContainerItemProxy */;
 		};
 		690C8C6F280E067BCB675816936749AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = 9BB3249A59230ABB91826F149B0001CD /* PBXContainerItemProxy */;
+		};
+		88E68B049251BF07807B8DC113B0C84E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = CD2E73E7AC7198343519C013C7BB2879 /* PBXContainerItemProxy */;
 		};
 		B84B70CF5BBD46EC50947F01A0C707BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -840,14 +844,14 @@
 		CC104683711EB660C50A6C39C32D5C6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HuobiSwift;
-			target = 97FD83865328F0F74C73F2C1F20F04AC /* HuobiSwift */;
+			target = D2789278565948760CCD51345F562C68 /* HuobiSwift */;
 			targetProxy = C3A43C0B76B0294E0BDF928C040BA698 /* PBXContainerItemProxy */;
 		};
-		D742A3CCAAEC2169F436949EFD60064B /* PBXTargetDependency */ = {
+		F993A9C433D4FEAFE858D39C10B60E5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GzipSwift;
 			target = 103C159A8E41B13CC7B3B8B027604542 /* GzipSwift */;
-			targetProxy = F139AA9FE64FBC62A4D773243AF64530 /* PBXContainerItemProxy */;
+			targetProxy = 0655944E9CF64DD7710A5D3977D251F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1068,38 +1072,6 @@
 			};
 			name = Release;
 		};
-		4138B30B47A19AF199CF1A7ADF7460DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5E07F4A220A8BC38DA330A6118A6F30 /* Starscream.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				PRODUCT_NAME = Starscream;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		45CE6F18A2EFFFC68BB493281E2517D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC3AA6EF447CADFACD4046852F7F735C /* GzipSwift.xcconfig */;
@@ -1131,38 +1103,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		484C86FAD4AB2047E706E47BAB086C5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5E07F4A220A8BC38DA330A6118A6F30 /* Starscream.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				PRODUCT_NAME = Starscream;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		5BDE03A784842495C98838A0589EDF89 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1260,9 +1200,9 @@
 			};
 			name = Release;
 		};
-		9DDD2ACF159A7ED30D46C35FF64A39CA /* Release */ = {
+		AB206A1C99DFD56BD440D6C8C72C398E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CC72785236B28EDE2D4C6CB2E02D91D /* HuobiSwift.xcconfig */;
+			baseConfigurationReference = 73E397579E6B85018F0AD68375116F6A /* HuobiSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1324,9 +1264,41 @@
 			};
 			name = Debug;
 		};
-		F40F34B1A30850AF72E4D9F5CA49C63F /* Debug */ = {
+		C3D2367756E96BDA414015E57EE8AEFB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CC72785236B28EDE2D4C6CB2E02D91D /* HuobiSwift.xcconfig */;
+			baseConfigurationReference = C5E07F4A220A8BC38DA330A6118A6F30 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_NAME = Starscream;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB5FF051DBC12B12814298BC52AC9586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73E397579E6B85018F0AD68375116F6A /* HuobiSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1356,6 +1328,38 @@
 			};
 			name = Debug;
 		};
+		FF3FEB85D5D31AD4AE896537C1954EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5E07F4A220A8BC38DA330A6118A6F30 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_NAME = Starscream;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1368,11 +1372,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23B107C34A1B08EA02F4FD81803CC9B6 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+		153683BC4C1F26F22F04D988DC3EB8AF /* Build configuration list for PBXNativeTarget "Starscream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				484C86FAD4AB2047E706E47BAB086C5E /* Debug */,
-				4138B30B47A19AF199CF1A7ADF7460DB /* Release */,
+				FF3FEB85D5D31AD4AE896537C1954EFB /* Debug */,
+				C3D2367756E96BDA414015E57EE8AEFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1395,20 +1399,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CCC7CD3B774EEEDA08971D73EF7D4D7 /* Build configuration list for PBXNativeTarget "HuobiSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F40F34B1A30850AF72E4D9F5CA49C63F /* Debug */,
-				9DDD2ACF159A7ED30D46C35FF64A39CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5B69750C018F3C705778A6978127CE0A /* Build configuration list for PBXNativeTarget "Pods-HuobiMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14C835CC8BC3F93460D4A5D8EA7CCAA2 /* Debug */,
 				38FEEE4E40E8D732182F09537E92574B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CB0D43E463B680BAA3626ADAD455304 /* Build configuration list for PBXNativeTarget "HuobiSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5FF051DBC12B12814298BC52AC9586 /* Debug */,
+				AB206A1C99DFD56BD440D6C8C72C398E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

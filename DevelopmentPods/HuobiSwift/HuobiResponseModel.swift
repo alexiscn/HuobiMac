@@ -41,6 +41,41 @@ public struct HBTick: Codable {
     }
 }
 
+public struct HBDepthResponse: Codable {
+    public let status: String
+    public let ch: String
+    public let ts: Int64
+    public let tick: HBDepthTick
+}
+
+public struct HBDepthTick: Codable {
+    public let id: Int64
+    public let ts: Int64
+    //买盘,[price(成交价), amount(成交量)], 按price降序
+    public let bids: [[Double]]
+    //卖盘,[price(成交价), amount(成交量)], 按price升序
+    public let asks: [[Double]]
+}
+
+public struct HBTradeDetailResponse: Codable {
+    public let status: String
+    public let tick: HBTradeTicks
+}
+
+public struct HBTradeTicks: Codable {
+    public let id: Int64
+    public let ts: Int64
+    public let data: [HBTradeTick]
+}
+
+public struct HBTradeTick: Codable {
+    public let id: Int64
+    public let price: Double
+    public let amount: Double
+    public let direction: String
+    public let ts: Int64
+}
+
 /// 订阅失败错误
 public struct SubscribeError: Codable {
     

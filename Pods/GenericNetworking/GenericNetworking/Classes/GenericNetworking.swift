@@ -61,6 +61,17 @@ open class GenericNetworking {
         requestJSON(URLString: URLString, method: .get, parameters: nil, headers: nil, completion: completion)
     }
     
+    public class func getJSON<T>(path: String, completion: @escaping GenericNetworkingCompletion<T>) {
+        requestJSON(path: path, method: .get, parameters: nil, headers: nil, completion: completion)
+    }
+    
+    public class func getJSON<T>(path: String, parameters: Parameters, completion: @escaping GenericNetworkingCompletion<T>) {
+        requestJSON(path: path, method: .get, parameters: parameters, headers: nil, completion: completion)
+    }
+    
+    public class func getJSON<T>(path: String, parameters: Parameters?, headers: HTTPHeaders?, completion: @escaping GenericNetworkingCompletion<T>) {
+        requestJSON(path: path, method: .get, parameters: parameters, headers: headers, completion: completion)
+    }
     
     /// make a POST request
     ///
@@ -82,17 +93,8 @@ open class GenericNetworking {
     ///   - parameters: parameters
     ///   - headers: HTTP Headers
     ///   - completion: completion callback
-    public class func requestJSON<T>(path: String, parameters: Parameters?, completion: @escaping GenericNetworkingCompletion<T>) {
-        
-        guard let baseURL = baseURLString else {
-            let errorInfo = "[GenericNetworking] `baseURLString` is nil, make sure `baseURLString` is not nil before your call this function"
-            let error = GenericNetworkingError.parameterError(errorInfo)
-            let res = GenericNetworkingResponse<T>.error(error)
-            completion(res)
-            log(errorInfo)
-            return
-        }
-        requestJSON(baseURLString: baseURL, path: path, method: .post, parameters: parameters, headers: nil, completion: completion)
+    public class func postJSON<T>(path: String, parameters: Parameters?, completion: @escaping GenericNetworkingCompletion<T>) {
+        requestJSON(path: path, method: .post, parameters: parameters, headers: nil, completion: completion)
     }
 
     
@@ -105,7 +107,15 @@ open class GenericNetworking {
     ///   - parameters: parameters
     ///   - headers: HTTP Headers
     ///   - completion: completion callback
-    public class func requestJSON<T>(baseURLString: String, path: String, method: HTTPMethod = .get, parameters: Parameters? = nil, headers: HTTPHeaders? = nil, completion: @escaping GenericNetworkingCompletion<T>) {
+    fileprivate class func requestJSON<T>(path: String, method: HTTPMethod = .get, parameters: Parameters? = nil, headers: HTTPHeaders? = nil, completion: @escaping GenericNetworkingCompletion<T>) {
+        guard let baseURLString = baseURLString else {
+            let errorInfo = "[GenericNetworking] `baseURLString` is nil, make sure `baseURLString` is not nil before your call this function"
+            let error = GenericNetworkingError.parameterError(errorInfo)
+            let res = GenericNetworkingResponse<T>.error(error)
+            completion(res)
+            log(errorInfo)
+            return
+        }
         let urlString = baseURLString.appending(path)
         requestJSON(URLString: urlString, method: method, parameters: parameters, headers: headers, completion: completion)
     }
