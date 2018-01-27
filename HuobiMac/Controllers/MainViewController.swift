@@ -59,15 +59,14 @@ class MainViewController: NSViewController, HuobiSocketDelegate {
     // MARK: - HuobiSocketDelegate
     
     func huobiSocketDidConnected(_ huobiSocket: HuobiSocket) {
-//        let topic = "market.btcusdt.kline.1day"
-//        socket?.subscribe(topic)
-        
         let usdtSymbols: [String] = Symbol.usdtSymbols().map({ return $0.rawValue })
         watch(symbols: usdtSymbols)
     }
     
     func huobiSocket(_ huobiSocket: HuobiSocket, didDisConnectError error: Error?) {
-        print("error:\(error?.localizedDescription)")
+        if let error = error {
+            print("error:\(error.localizedDescription)")
+        }
     }
     
     func huobiSocket(_ huobiSocket: HuobiSocket, didReceiveKLine kLine: HBKLine) {

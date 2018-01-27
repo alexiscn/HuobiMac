@@ -10,9 +10,7 @@ PODS:
   - Starscream (3.0.4)
 
 DEPENDENCIES:
-  - GzipSwift
   - HuobiSwift (from `DevelopmentPods/HuobiSwift`)
-  - Starscream
 
 EXTERNAL SOURCES:
   HuobiSwift:
@@ -25,6 +23,6 @@ SPEC CHECKSUMS:
   HuobiSwift: 63303c691da882ccd647b550272e69cda559d30d
   Starscream: f5da93fe6984c77b694366bf7299b7dc63a76f26
 
-PODFILE CHECKSUM: 3971752957c2be0b2eb5c6561a08897e6893adfb
+PODFILE CHECKSUM: 3d5783c0b034a14f975ae1283f58bcacc20ac7b6
 
 COCOAPODS: 1.4.0

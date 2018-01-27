@@ -76,6 +76,13 @@ public struct HBTradeTick: Codable {
     public let ts: Int64
 }
 
+public struct HBHistoryTradeResponse: Codable {
+    public let status: String
+    public let ch: String
+    public let ts: Int64
+    public let data: [HBTradeTicks]
+}
+
 /// 订阅失败错误
 public struct SubscribeError: Codable {
     

@@ -87,7 +87,7 @@ public class HuobiAPI {
     ///   - symbol: 交易对, btcusdt, bchbtc, rcneth ...
     ///   - size: 获取交易记录的数量, 默认值 1, 取值范围: [1-2000]
     ///   - completion: 请求回调
-    public static func getMarketHistoryTrade(symbol: HBSymbol, size: Int = 1, completion: @escaping GenericNetworkingCompletion<Int>) {
+    public static func getMarketHistoryTrade(symbol: HBSymbol, size: Int = 1, completion: @escaping GenericNetworkingCompletion<HBHistoryTradeResponse>) {
         let path = "/market/history/trade"
         let params: [String: Any] = ["symbol": symbol.rawValue, "size": size]
         GenericNetworking.getJSON(path: path, parameters: params, completion: completion)
