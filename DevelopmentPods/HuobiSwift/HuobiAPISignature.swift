@@ -6,11 +6,21 @@
 //
 
 import Foundation
-
+import Alamofire
 
 class HuobiAPISignature {
     
-    static func sign(method: String, params: [String: String]) {
+    static func sign(method: HTTPMethod, path: String, params: Parameters) -> String {
+        
+        let str = "\(method.rawValue)\n" +
+            "api.huobi.pro\n" +
+        "\(path)\n"
+        
+        
+        
+        // SignatureMethod=HmacSHA256&SignatureVersion=2&
+        
+        return ""
         
     }
     
