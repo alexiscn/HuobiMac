@@ -9,6 +9,14 @@ import Foundation
 
 // MARK: - Market Response
 
+/// K线数据
+public struct HBKLineResponse: Codable {
+    public let status: String
+    public let ch: String
+    public let ts: Int64
+    public let data: [HBTick]
+}
+
 /// K线
 public struct HBKLine: Codable {
     public let ch: String
@@ -41,6 +49,8 @@ public struct HBTick: Codable {
     }
 }
 
+/// MARK: - Market Depth
+
 public struct HBDepthResponse: Codable {
     public let status: String
     public let ch: String
@@ -49,12 +59,31 @@ public struct HBDepthResponse: Codable {
 }
 
 public struct HBDepthTick: Codable {
-    public let id: Int64
     public let ts: Int64
     //买盘,[price(成交价), amount(成交量)], 按price降序
     public let bids: [[Double]]
     //卖盘,[price(成交价), amount(成交量)], 按price升序
     public let asks: [[Double]]
+}
+
+public struct HBMarketDetailMergedResponse: Codable {
+    public let status: String
+    public let ch: String
+    public let ts: Int64
+    public let tick: HBMarketDetailMergedTick
+}
+
+public struct HBMarketDetailMergedTick: Codable {
+    public let amount: Double
+    public let open: Double
+    public let close: Double
+    public let high: Double
+    public let count: Int
+    public let low: Double
+    public let version: Int64
+    public let ask: [Double]
+    public let vol: Double
+    public let bid: [Double]
 }
 
 public struct HBTradeDetailResponse: Codable {

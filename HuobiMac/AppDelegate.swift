@@ -33,6 +33,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.behavior = .transient
         
         mainViewController.connect()
+        
+        HuobiAPITests.test()
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {

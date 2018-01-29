@@ -35,13 +35,15 @@ public class HuobiAPI {
     ///   - period: K线类型
     ///   - size: 获取数量, 默认值：150
     ///   - completion: 请求回调
-    public static func getHistoryKLine(symbol: HBSymbol, period: HBPeroid, size: Int = 150, completion: @escaping GenericNetworkingCompletion<HBKLine>) {
+    public static func getHistoryKLine(symbol: HBSymbol, period: HBPeroid, size: Int = 150, completion: @escaping GenericNetworkingCompletion<HBKLineResponse>) {
         let path = "/market/history/kline"
         var params: [String: Any] = [:]
         params["symbol"] = symbol.rawValue
         params["period"] = period.rawValue
         params["size"] = size
-        GenericNetworking.getJSON(path: path, parameters: params, completion: completion)
+        DispatchQueue.global(qos: .background).async {
+            GenericNetworking.getJSON(path: path, parameters: params, completion: completion)
+        }
     }
 
     /// 获取聚合行情(Ticker)
@@ -49,7 +51,7 @@ public class HuobiAPI {
     /// - Parameters:
     ///   - symbol: 交易对, btcusdt, bchbtc, rcneth ...
     ///   - completion: 请求回调
-    public static func getMerged(symbol: HBSymbol, completion: @escaping GenericNetworkingCompletion<Int>) {
+    public static func getMarketDetailMerged(symbol: HBSymbol, completion: @escaping GenericNetworkingCompletion<HBMarketDetailMergedResponse>) {
         let path = "/market/detail/merged"
         let params = ["symbol": symbol.rawValue]
         GenericNetworking.getJSON(path: path, parameters: params, completion: completion)
@@ -64,7 +66,7 @@ public class HuobiAPI {
     ///   - completion: 请求回调
     public static func getMarketDepth(symbol: HBSymbol, depth: HBDepthStep, completion: @escaping GenericNetworkingCompletion<HBDepthResponse>) {
         let path = "/market/depth"
-        let params = ["symbol": symbol.rawValue, "depth": depth.rawValue]
+        let params = ["symbol": symbol.rawValue, "type": depth.rawValue]
         GenericNetworking.getJSON(path: path, parameters: params, completion: completion)
     }
     
