@@ -12,10 +12,11 @@ public class HuobiAPI {
     
     fileprivate static let baseURLString = "https://api.huobi.pro"
     
+    /// 网页版登录后，创建
     internal static var apikey: String?
     
+    /// 网页端登录后，创建
     internal static var secretkey: String?
-    
     
     /// 配置HuoboAPI的参数
     ///
@@ -198,4 +199,48 @@ extension HuobiAPI {
         let encodedPath = HuobiAPISignature.queryStringFor(path: path, method: .post, params: params)
         GenericNetworking.postJSON(path: encodedPath, parameters: params, completion: completion)
     }
+    
+    
+    public class func getOrders(symbol: HBSymbol, state: HBOrderState, tpye: HBTradeType, startDate: Date, endDate: Date, fromID: String?, endID: String?, size: Int?, completion: @escaping GenericNetworkingCompletion<Int>) {
+        
+    }
+}
+
+
+// MARK: - 借贷交易API
+extension HuobiAPI {
+    
+    
+    /// 申请提现虚拟币
+    ///
+    /// - Parameters:
+    ///   - address: 提现地址
+    ///   - amount: 提币数量
+    ///   - currency: 资产类型
+    ///   - fee: 转账手续费
+    ///   - addrTag: 虚拟币共享地址tag，XRP特有
+    ///   - completion: 请求回调
+    public class func createWithdraw(address: String, amount: String, currency: String, fee: String?, addrTag: String?, completion: @escaping GenericNetworkingCompletion<Int>) {
+        let path = "/v1/dw/withdraw/api/create"
+        var params: [String: String] = [:]
+        params["address"] = address
+        params["amount"] = amount
+        params["currency"] = currency
+        if let f = fee { params["fee"] = f  }
+        if let tag = addrTag { params["addr-tag"] = tag }
+        let encodedPath = HuobiAPISignature.queryStringFor(path: path, method: .post, params: params)
+        GenericNetworking.postJSON(path: encodedPath, parameters: params, completion: completion)
+    }
+    
+    
+    /// 申请取消提现虚拟币
+    ///
+    /// - Parameter withdrawId: 提现ID，填在path中
+    public class func cancelWithdraw(_ withdrawId: Int64, completion: @escaping GenericNetworkingCompletion<Int>) {
+        let path = "/v1/dw/withdraw-virtual/\(withdrawId)/cancel"
+        let params = ["withdraw-id": withdrawId]
+        let encodedPath = HuobiAPISignature.queryStringFor(path: path, method: .post, params: params)
+        GenericNetworking.postJSON(path: encodedPath, parameters: params, completion: completion)
+    }
+    
 }

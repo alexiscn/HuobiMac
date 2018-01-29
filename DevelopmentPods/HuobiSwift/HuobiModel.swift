@@ -61,3 +61,12 @@ public enum HBTradeType: String {
     // 限价卖
     case sellLimit = "sell-limit"
 }
+
+public enum HBOrderState: String {
+    case preSubmitted = "pre-submitted"
+    case submitted = "submitted"
+    case partialFilled = "partial-filled" // 部分成交,
+    case partialCanceled = "partial-canceled" // 部分成交撤销,
+    case filled = "filled" // 完全成交,
+    case canceled = "canceled" // 已撤销
+}
