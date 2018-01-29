@@ -13,7 +13,7 @@ class HuobiAPITests {
     
     public class func test() {
         
-        HuobiAPI.configurate(with: "empty", secretKey: "empty")
+        HuobiAPI.configurate(with: "your_app_id", secretKey: "your_app_secret")
         
         // GET /market/history/kline 获取K线数据
         HuobiAPI.getHistoryKLine(symbol: HBSymbol.btcusdt, period: HBPeroid.day) { response in

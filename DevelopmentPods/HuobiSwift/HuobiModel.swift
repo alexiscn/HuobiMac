@@ -48,3 +48,16 @@ public enum HBPeroid: String {
 public enum HBDepthStep: String {
     case step0, step1, step2, step3, step4, step5
 }
+
+
+/// 订单类型
+public enum HBTradeType: String {
+    // 市价买
+    case buyMarket = "buy-market"
+    // 市价卖
+    case sellMarket = "sell-marke"
+    // 限价买
+    case buyLimit = "buy-limit"
+    // 限价卖
+    case sellLimit = "sell-limit"
+}

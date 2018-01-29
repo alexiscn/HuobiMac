@@ -54,13 +54,12 @@ extension String {
         
         CCHmac(algorithm, keyStr!, keyLen, str!, strLen, result)
         
-        let hash = NSMutableString()
-        for i in 0..<digestLen {
-            hash.appendFormat("%02x", result[i])
-        }
-        
+//        let hash = NSMutableString()
+//        for i in 0..<digestLen {
+//            hash.appendFormat("%02x", result[i])
+//        }
+        let data = NSData(bytesNoCopy: result, length: digestLen)
         result.deinitialize()
-        
-        return String(hash)
+        return data.base64EncodedString(options: .lineLength76Characters)
     }
 }
