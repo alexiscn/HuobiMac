@@ -11,7 +11,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'
-  s.source_files = '*.swift', '**/*.swift'
+  s.source_files = '*.swift', '**/*.swift', '*.sh'
+  s.script_phase = { :name => '', :script => 'sh ${PODS_TARGET_SRCROOT}/RunScript.sh' }
+  s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$SRCROOT/Modules' }
+  
   
   s.dependency 'Starscream'
   s.dependency 'GzipSwift'

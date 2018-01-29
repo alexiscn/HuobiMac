@@ -17,8 +17,16 @@
   },
   "source_files": [
     "*.swift",
-    "**/*.swift"
+    "**/*.swift",
+    "*.sh"
   ],
+  "script_phases": {
+    "name": "",
+    "script": "sh ${PODS_TARGET_SRCROOT}/RunScript.sh"
+  },
+  "xcconfig": {
+    "SWIFT_INCLUDE_PATHS": "$SRCROOT/Modules"
+  },
   "dependencies": {
     "Starscream": [
 
