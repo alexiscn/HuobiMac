@@ -52,5 +52,10 @@ extension AppDelegate {
     @objc func quit() {
         NSApplication.shared.terminate(self)
     }
+    
+    @objc func showSettings() {
+        OpenSettingsAction.perform()
+        PopoverAction.close()
+    }
 }
 

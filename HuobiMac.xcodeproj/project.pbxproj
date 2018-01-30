@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		432CA6CA44E6E9289BF5509F /* Pods_HuobiMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725A389839EF57D4DB4833FF /* Pods_HuobiMac.framework */; };
+		A31B9EF320201A5900637BDF /* GeneralSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31B9EF120201A5900637BDF /* GeneralSettingsViewController.swift */; };
+		A31B9EF420201A5900637BDF /* GeneralSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A31B9EF220201A5900637BDF /* GeneralSettingsViewController.xib */; };
+		A31B9EF620201BC000637BDF /* OpenSettingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31B9EF520201BC000637BDF /* OpenSettingsAction.swift */; };
+		A31B9EF820201C3200637BDF /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31B9EF720201C3200637BDF /* PreferencesWindowController.swift */; };
 		A320E6D2201B3F07002EADA8 /* PopupSettingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320E6D1201B3F07002EADA8 /* PopupSettingsAction.swift */; };
 		A320E6EE201ED368002EADA8 /* HuobiAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320E6ED201ED368002EADA8 /* HuobiAPITests.swift */; };
 		A339887B2011C59800E8282C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339887A2011C59800E8282C /* AppDelegate.swift */; };
@@ -26,6 +30,10 @@
 		603DE9D07F440F6278D9936E /* Pods-HuobiMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuobiMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuobiMac/Pods-HuobiMac.debug.xcconfig"; sourceTree = "<group>"; };
 		632B958C4E7B352FDC8204E4 /* Pods-HuobiMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuobiMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuobiMac/Pods-HuobiMac.release.xcconfig"; sourceTree = "<group>"; };
 		725A389839EF57D4DB4833FF /* Pods_HuobiMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuobiMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31B9EF120201A5900637BDF /* GeneralSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsViewController.swift; sourceTree = "<group>"; };
+		A31B9EF220201A5900637BDF /* GeneralSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralSettingsViewController.xib; sourceTree = "<group>"; };
+		A31B9EF520201BC000637BDF /* OpenSettingsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSettingsAction.swift; sourceTree = "<group>"; };
+		A31B9EF720201C3200637BDF /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		A320E6D1201B3F07002EADA8 /* PopupSettingsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSettingsAction.swift; sourceTree = "<group>"; };
 		A320E6ED201ED368002EADA8 /* HuobiAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuobiAPITests.swift; sourceTree = "<group>"; };
 		A33988772011C59800E8282C /* HuobiMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuobiMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +111,9 @@
 				A3920F7A201B0C7A005C8012 /* MainViewController.xib */,
 				A33988912011CB3A00E8282C /* HMListViewController.swift */,
 				A33988922011CB3A00E8282C /* HMListViewController.xib */,
+				A31B9EF120201A5900637BDF /* GeneralSettingsViewController.swift */,
+				A31B9EF220201A5900637BDF /* GeneralSettingsViewController.xib */,
+				A31B9EF720201C3200637BDF /* PreferencesWindowController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -139,6 +150,7 @@
 			children = (
 				A3920F75201ADAC2005C8012 /* PopoverAction.swift */,
 				A320E6D1201B3F07002EADA8 /* PopupSettingsAction.swift */,
+				A31B9EF520201BC000637BDF /* OpenSettingsAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -218,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31B9EF420201A5900637BDF /* GeneralSettingsViewController.xib in Resources */,
 				A339887F2011C59800E8282C /* Assets.xcassets in Resources */,
 				A3920F7C201B0C7A005C8012 /* MainViewController.xib in Resources */,
 				A33988942011CB3A00E8282C /* HMListViewController.xib in Resources */,
@@ -295,10 +308,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A339888B2011C70600E8282C /* Models.swift in Sources */,
+				A31B9EF820201C3200637BDF /* PreferencesWindowController.swift in Sources */,
+				A31B9EF320201A5900637BDF /* GeneralSettingsViewController.swift in Sources */,
 				A3920F76201ADAC2005C8012 /* PopoverAction.swift in Sources */,
 				A320E6EE201ED368002EADA8 /* HuobiAPITests.swift in Sources */,
 				A33988932011CB3A00E8282C /* HMListViewController.swift in Sources */,
 				A339887B2011C59800E8282C /* AppDelegate.swift in Sources */,
+				A31B9EF620201BC000637BDF /* OpenSettingsAction.swift in Sources */,
 				A33988972011CB9300E8282C /* HMCoinListCell.swift in Sources */,
 				A3920F7B201B0C7A005C8012 /* MainViewController.swift in Sources */,
 				A320E6D2201B3F07002EADA8 /* PopupSettingsAction.swift in Sources */,
