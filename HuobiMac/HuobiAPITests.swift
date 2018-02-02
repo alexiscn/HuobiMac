@@ -58,6 +58,18 @@ class HuobiAPITests {
                 print("depth:\(detail.tick)")
             }
         }
+        
+        // GET /v1/common/symbols 查询系统支持的所有交易对及精度
+        HuobiAPI.getSymbols { (response) in
+            switch response {
+            case .error(let error):
+                print(error)
+            case .success(let symbols):
+                // do something with symbols
+                // symbols is typeof HBSupportSymbols
+                print(symbols.status)
+            }
+        }
     }
     
 }

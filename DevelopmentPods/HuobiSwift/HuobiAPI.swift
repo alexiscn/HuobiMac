@@ -201,8 +201,60 @@ extension HuobiAPI {
     }
     
     
-    public class func getOrders(symbol: HBSymbol, state: HBOrderState, tpye: HBTradeType, startDate: Date, endDate: Date, fromID: String?, endID: String?, size: Int?, completion: @escaping GenericNetworkingCompletion<Int>) {
+    
+    /// 查询当前委托、历史委托
+    ///
+    /// - Parameters:
+    ///   - symbol: 交易对
+    ///   - states: 查询的订单状态组合，使用','分割
+    ///   - types: 查询的订单类型组合，使用','分割
+    ///   - startDate: 查询开始日期
+    ///   - endDate: 查询结束日期
+    ///   - fromID: 查询起始 ID
+    ///   - size: 查询记录大小
+    ///   - direction: 查询方向
+    ///   - completion: 请求回调
+    public class func getOrders(symbol: HBSymbol,
+                                states: [HBOrderState],
+                                types: [HBTradeType]?,
+                                startDate: Date?,
+                                endDate: Date?,
+                                fromID: String?,
+                                size: Int?,
+                                direction: HBOrderDirection?, completion: @escaping GenericNetworkingCompletion<Int>) {
         
+        func formatDate(_ date: Date) -> String {
+            let dateFormatter = DateFormatter()
+            let timeZone = TimeZone(secondsFromGMT: 0)
+            dateFormatter.timeZone = timeZone!
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            return dateFormatter.string(from: date)
+        }
+        
+        let path = "/v1/order/orders"
+        var params: [String: String] = [:]
+        params["symbol"] = symbol.rawValue
+        params["states"] = states.map({ return $0.rawValue }).joined(separator: ",")
+        if let types = types {
+            params["types"] = types.map({ return $0.rawValue }).joined(separator: ",")
+        }
+        if let startDate = startDate {
+            params["start-date"] = formatDate(startDate)
+        }
+        if let endDate = endDate {
+            params["end-date"] = formatDate(endDate)
+        }
+        if let fromID = fromID {
+            params["from"] = fromID
+        }
+        if let size = size {
+            params["size"] = String(size)
+        }
+        if let direct = direction {
+            params["direct"] = direct.rawValue
+        }
+        let encodedPath = HuobiAPISignature.queryStringFor(path: path, method: .get, params: params)
+        GenericNetworking.postJSON(path: encodedPath, parameters: params, completion: completion)
     }
 }
 
